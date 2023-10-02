@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "tc": "tsc --project ./tsconfig.json"
   },
   "dependencies": {
     "@portabletext/react": "^3.0.9",
