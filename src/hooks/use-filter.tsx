@@ -2,7 +2,7 @@
 import { type NamePage } from "@/types/name-project";
 import * as React from "react";
 
-export const useFilter = ({ list = [] }: { list: NamePage[] }) => {
+export const useFilter = ({ list = [] }: { list: Omit<NamePage,"content">[] }) => {
   const [input, setInput] = React.useState("");
   const [filtered, setFiltered] = React.useState(list);
   React.useEffect(() => {

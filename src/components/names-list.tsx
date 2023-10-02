@@ -7,7 +7,7 @@ import { type NamePage } from "@/types/name-project";
 export const NamesList = ({
   names,
 }: {
-  names: NamePage[];
+  names: Omit<NamePage,"content">[];
 }) => {
   const { filtered, input, setInput } = useFilter({
     list: names,
