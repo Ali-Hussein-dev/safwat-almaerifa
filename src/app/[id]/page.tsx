@@ -8,10 +8,10 @@ export default async function NamePage({ params }: { params: { id: string } }) {
   const pageRes = await getNamePage(params.id);
   const page= pageRes[0]!;
   return (
-    <section className="mx-auto w-full max-w-3xl grow rounded-sm bg-zinc-50 px-2 pt-10 md:px-6">
-      <div className="py-2 flex-row-between">
+    <section className="mx-auto w-full max-w-3xl grow rounded-sm bg-zinc-50 px-3 pt-12 md:px-8 shadow-lg">
+      <div className="pb-1 flex-row-between border-b border-zinc-300 mb-4">
         <h2 className="mb-4 text-3xl font-bold text-zinc-700">
-          {page.title}
+          {page?.title}
         </h2>
         <Link
           href="/"
@@ -20,8 +20,7 @@ export default async function NamePage({ params }: { params: { id: string } }) {
           <FaArrowLeft className="text-zinc-600" />
         </Link>
       </div>
-      <div className="prose prose-h2:text-zinc-700 prose-p:text-lg">
-        <p>{page.description}</p>
+      <div className="prose prose-h2:text-zinc-700 prose-zinc prose-p:md:text-xl prose-p:text-lg w-full max-w-3xl py-6">
         <PortableText value={page.content} />
       </div>
     </section>
