@@ -44,7 +44,7 @@ export function FilterInput({ input, setInput }: Props) {
           <IoClose className="text-zinc-500" size="20" />
         </button>
       ) : (
-        <span className="text-zinc-500">
+        <span className="text-zinc-500 hidden md:inline-block">
           {navigator.userAgent.includes("Mac") ? "cmd+K" : "ctrl+K"}
         </span>
       )}
