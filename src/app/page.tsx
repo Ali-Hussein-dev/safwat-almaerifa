@@ -8,7 +8,6 @@ const content = {
 
 export default async function RootPage() {
   const pages = await getAllPages();
-  console.log("Pages count: ",pages?.length);
   return (
     <div className="relative mx-auto h-full w-full max-w-3xl grow space-y-8 pt-10 px-2 sm:px-4 flex flex-col justify-start">
         <div className="pt-4 md:pt-16">
