@@ -5,12 +5,12 @@ import { type NamePage } from "@/types/name-project";
 import dynamic from "next/dynamic";
 
 const CardSkeleton = () => (
-  <div className="break-inside w-full min-w-[10rem] space-y-5 rounded bg-zinc-50 p-7 shadow">
+  <div className="break-inside w-full space-y-5 rounded bg-zinc-50 p-7 shadow">
     <div className="space-y-2">
       <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-300" />
-      <div className="h-4 w-44 animate-pulse rounded bg-zinc-200 duration-300" />
-      <div className="h-4 w-44 animate-pulse rounded bg-zinc-200 duration-300" />
-      <div className="h-4 w-28 animate-pulse rounded bg-zinc-200 duration-300" />
+      <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
+      <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
+      <div className="h-4 w-36 animate-pulse rounded bg-zinc-200 duration-300" />
     </div>
     <div className="w-full flex-row-between">
       <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-300" />
@@ -38,8 +38,8 @@ export const NamesList = ({
   return (
     <>
       <FilterInput input={input} setInput={setInput} />
-      <div className="mx-auto">
-        <section className="sm:masonry-cols-2 md:masonry-cols-3 space-y-5 pb-12">
+      <div className="mx-auto w-full">
+        <section className="sm:masonry-cols-2 md:masonry-cols-3 w-full space-y-5 pb-12">
           {filtered?.map((o) => (
             <DynamicNameCard
               key={o._id}
