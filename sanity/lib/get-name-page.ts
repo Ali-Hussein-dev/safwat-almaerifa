@@ -17,6 +17,7 @@ export async function getNamePage(slug: string): Promise<NamePage[]> {
 export async function getAllPages(): Promise<Omit<NamePage, "content">[]> {
     return client.fetch(
         `*[_type == "page"]{
+            _id,
             title,
             key,
             description,

@@ -19,10 +19,11 @@ export const NamesList = ({
         <section className="sm:masonry-cols-2 md:masonry-cols-3 space-y-5 pb-12">
           {filtered?.map((o) => (
             <NameCard
-              key={o.slug}
-              name={o.title}
+              key={o._id}
+              title={o.title}
               slug={o.slug}
               description={o.description}
+              _id={o._id}
             />
           ))}
         </section>
