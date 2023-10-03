@@ -1,8 +1,17 @@
 "use client";
 import { useFilter } from "@/hooks/use-filter";
-import { FilterInput } from "./filter-input";
 import { type NamePage } from "@/types/name-project";
 import dynamic from "next/dynamic";
+
+const DynamicInput = dynamic(
+  () => import("./filter-input").then((r) => r.FilterInput),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="mb-2 h-12 w-full animate-pulse rounded bg-zinc-100 duration-300" />
+    ),
+  },
+);
 
 const CardSkeleton = () => (
   <div className="break-inside w-full space-y-5 rounded bg-zinc-50 p-7 shadow">
@@ -25,7 +34,6 @@ const DynamicNameCard = dynamic(
     loading: () => <CardSkeleton />,
   },
 );
-
 export const NamesList = ({
   names,
 }: {
@@ -37,7 +45,7 @@ export const NamesList = ({
 
   return (
     <>
-      <FilterInput input={input} setInput={setInput} />
+      <DynamicInput input={input} setInput={setInput} />
       <div className="mx-auto w-full">
         <section className="sm:masonry-cols-2 md:masonry-cols-3 w-full space-y-5 pb-12">
           {filtered?.map((o) => (
