@@ -7,6 +7,8 @@ import { type NamePage } from "@/types/name-project";
 const content = {
   source: "المرجع",
 };
+export const revalidate = 30
+
 export default async function NamePage({ params }: { params: { id: string } }) {
   const pageRes = await getNamePage(params.id);
   const page = pageRes[0]!;
