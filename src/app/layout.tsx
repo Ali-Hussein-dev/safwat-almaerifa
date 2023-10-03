@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className={fontFamily.className}>
       <body className="scroll-smooth antialiased">
-        <main className="mx-auto flex min-h-screen flex-col justify-between gap-2">
+        <main className="mx-auto flex min-h-screen flex-col justify-between gap-4">
           <header className="h-12 w-full bg-zinc-100 shadow"></header>
           {children}
           <Footer />

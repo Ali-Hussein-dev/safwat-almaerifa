@@ -11,7 +11,7 @@ export default async function NamePage({ params }: { params: { id: string } }) {
   const pageRes = await getNamePage(params.id);
   const page = pageRes[0]!;
   return (
-    <section className="mx-auto w-full max-w-3xl grow rounded-sm bg-zinc-50 px-3 pb-8 pt-12 shadow-lg md:px-8">
+    <section className="mx-auto w-full max-w-3xl grow rounded-sm bg-zinc-100 px-3 pb-8 pt-12 shadow-xl md:px-8">
       <div className="mb-4 border-b border-zinc-200 pb-1 flex-row-between">
         <h2 className="mb-4 text-3xl font-bold text-zinc-700">{page?.title}</h2>
         <Link
