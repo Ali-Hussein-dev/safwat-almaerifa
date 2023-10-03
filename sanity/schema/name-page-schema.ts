@@ -38,7 +38,12 @@ const namePageSchema = {
                     type: "block",
                 },
             ],
-        }
+        },
+        {
+            name: "source",
+            title: "Source",
+            type: "string",
+        },
     ]
 }
 export default namePageSchema

@@ -13,7 +13,7 @@ export function NameCard({
   description,
   slug,
   _id,
-}: Omit<NamePage, "content" | "_createdAt">) {
+}: Omit<NamePage, "content" | "_createdAt" | "source">) {
   const { setMarked, namesList } = useMarked();
   const marked = !!namesList[_id];
   const onClick = () => {

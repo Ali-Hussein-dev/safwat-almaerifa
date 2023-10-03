@@ -6,5 +6,6 @@ export type NamePage = {
     key: string;
     description: string;
     slug: string;
+    source: string;
     content: PortableTextBlock;
 }
