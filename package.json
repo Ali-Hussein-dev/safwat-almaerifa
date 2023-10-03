@@ -10,6 +10,7 @@
     "tc": "tsc --project ./tsconfig.json"
   },
   "dependencies": {
+    "@mantine/hooks": "^7.1.2",
     "@portabletext/react": "^3.0.9",
     "@sanity/image-url": "1",
     "@sanity/vision": "3",

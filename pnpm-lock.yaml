@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@mantine/hooks': ^7.1.2
   '@portabletext/react': ^3.0.9
   '@sanity/image-url': '1'
   '@sanity/vision': '3'
@@ -32,6 +33,7 @@ specifiers:
   zustand: ^4.4.2
 
 dependencies:
+  '@mantine/hooks': 7.1.2_react@18.2.0
   '@portabletext/react': 3.0.9_react@18.2.0
   '@sanity/image-url': 1.0.2
   '@sanity/vision': 3.16.7_wlbqgtd3hsquwwfqazg47kay4q
@@ -1022,6 +1024,14 @@ packages:
     resolution: {integrity: sha512-5nwY1JzCueUdRtlMBnlf1SUi69iGCq2ABq7WQFQMkn/kxPvoACAEnTp4P17CtXxYr7WCwtYPLL2AEvxKPuF1OQ==}
     dependencies:
       '@lezer/common': 1.1.0
+    dev: false
+
+  /@mantine/hooks/7.1.2_react@18.2.0:
+    resolution: {integrity: sha512-2sqfBKse/aJq93zEpIn4OY+jRACmDIWBixfBgobRfltDyeL8G+3223LSAaeT6ZD8+h2YBJVmbCD5QY7bx2l11Q==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@next/env/13.5.3:
