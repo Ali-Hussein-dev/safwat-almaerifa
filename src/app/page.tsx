@@ -3,7 +3,7 @@ import { getAllPages } from "../../sanity/lib/get-name-page";
 
 const content = {
   h1: "أسماء الله الحسنى",
-  p: "وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا ۖ وَذَرُوا الَّذِينَ يُلْحِدُونَ فِي أَسْمَائِهِ ۚ سَيُجْزَوْنَ مَا كَانُوا يَعْمَلُونَ ",
+  p: "وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا ۖ وَذَرُوا الَّذِينَ يُلْحِدُونَ فِي أَسْمَائِهِ ۚ سَيُجْزَوْنَ مَا كَانُوا يَعْمَلُونَ",
 };
 
 export default async function RootPage() {
@@ -14,7 +14,7 @@ export default async function RootPage() {
           <h1 className="mb-1 text-center text-lg font-extrabold text-zinc-700 sm:text-2xl md:text-4xl">
             {content.h1}
           </h1>
-          <p className="text-center text-zinc-500">{content.p}</p>
+          <p className="text-center text-zinc-500 text-lg">{content.p}</p>
         </div>
         <NamesList names={pages} />
       </div>
