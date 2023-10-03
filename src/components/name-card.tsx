@@ -1,28 +1,42 @@
 "use client";
+import { useMarked } from "@/hooks/use-mark";
+import { type NamePage } from "@/types/name-project";
 import Link from "next/link";
-
-type Props = {
-  slug: string;
-  name: string;
-  description: string;
-};
-
+import { BsBookmark, BsFillBookmarkCheckFill } from "react-icons/bs";
+import * as React from "react";
 const content = {
   read: "اقرأ المزيد",
 };
 
-export function NameCard({ name, description, slug }: Props) {
+export function NameCard({
+  title,
+  description,
+  slug,
+  _id,
+}: Omit<NamePage, "content" | "_createdAt">) {
+  const { setMarked, namesList } = useMarked();
+  const marked = !!namesList[_id];
+  const onClick = () => {
+    setMarked(_id, !marked);
+  };
   return (
-    <div className="break-inside flex flex-col justify-between rounded-sm border-zinc-500 bg-gradient-to-b from-zinc-100 to-transparent p-4 text-zinc-700 duration-300">
+    <div className="break-inside flex flex-col justify-between rounded-lg border-zinc-100 bg-gradient-to-t from-zinc-100 to-transparent p-4 pt-8 text-zinc-700 shadow-lg duration-300">
       <div className="mb-5 grow">
-        <div className="mb-1 font-bold flex-row-between w-full">
-          {name}
-        </div>
+        <div className="mb-1 w-full font-bold flex-row-between">{title}</div>
         <p className="font-light text-zinc-500">{description}</p>
       </div>
-      <Link href={`/${slug}`}>
-        <button className="text-lime-500">{content.read}</button>
-      </Link>
+      <div className="flex-row-between">
+        <Link href={`/${slug}`} className="text-lime-500">
+          {content.read}
+        </Link>
+        <button type="button" onClick={onClick} className="p-1 text-lime-600">
+          {marked ? (
+            <BsFillBookmarkCheckFill size="20" />
+          ) : (
+            <BsBookmark size="20" />
+          )}
+        </button>
+      </div>
     </div>
   );
 }
