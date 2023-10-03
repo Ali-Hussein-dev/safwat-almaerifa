@@ -16,7 +16,7 @@ export default async function RootPage() {
           </h1>
           <p className="text-center text-zinc-500 text-lg">{content.p}</p>
         </div>
-        <NamesList names={pages.slice(0,10)} />
+        <NamesList names={pages} />
       </div>
   );
 }
