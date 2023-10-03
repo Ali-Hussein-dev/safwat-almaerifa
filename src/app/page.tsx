@@ -7,7 +7,7 @@ const content = {
 };
 
 export default async function RootPage() {
-  const pages = await getAllPages();
+  const pages = (await getAllPages()).sort((a,b)=> +a.slug - +b.slug)
   return (
     <div className="relative mx-auto h-full w-full max-w-3xl grow space-y-8 pt-10 px-2 sm:px-4 flex flex-col justify-start">
         <div className="pt-4 md:pt-16">
@@ -16,7 +16,7 @@ export default async function RootPage() {
           </h1>
           <p className="text-center text-zinc-500 text-lg">{content.p}</p>
         </div>
-        <NamesList names={pages} />
+        <NamesList names={pages.slice(0,10)} />
       </div>
   );
 }
