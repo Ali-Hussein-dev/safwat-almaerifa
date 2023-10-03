@@ -6,9 +6,9 @@ export async function getNamePage(slug: string): Promise<NamePage[]> {
         `*[_type == "page" && slug.current == $slug]{
       _id,
       title,
-      description,
       "slug": slug.current,
-      content
+      content,
+      source
     }`,
         { slug },
     );
