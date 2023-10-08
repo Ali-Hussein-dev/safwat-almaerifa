@@ -21,6 +21,7 @@ specifiers:
   postcss: ^8.4.27
   prettier: ^3.0.0
   prettier-plugin-tailwindcss: ^0.5.1
+  re-resizable: ^6.9.11
   react: 18.2.0
   react-dom: 18.2.0
   react-icons: ^4.11.0
@@ -40,6 +41,7 @@ dependencies:
   '@t3-oss/env-nextjs': 0.6.1_v7htcrlgukgf7qsxduvbwauwy4
   next: 13.5.3_biqbaboplfbrettd7655fr4n2y
   next-sanity: 5.5.4_5sp3qibqjcgdhtcezhmjxfqwki
+  re-resizable: 6.9.11_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.11.0_react@18.2.0
@@ -5168,6 +5170,16 @@ packages:
     resolution: {integrity: sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==}
     dependencies:
       performance-now: 2.1.0
+    dev: false
+
+  /re-resizable/6.9.11_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-a3hiLWck/NkmyLvGWUuvkAmN1VhwAz4yOhS6FdMTaxCUVN9joIWkT11wsO68coG/iEYuwn+p/7qAmfQzRhiPLQ==}
+    peerDependencies:
+      react: ^16.13.1 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-clientside-effect/1.2.6_react@18.2.0:
