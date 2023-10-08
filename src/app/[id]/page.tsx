@@ -13,8 +13,8 @@ export default async function NamePage({ params }: { params: { id: string } }) {
   const pageRes = await getNamePage(params.id);
   const page = pageRes[0]!;
   return (
-    <section className="mx-auto w-full max-w-3xl grow rounded-sm bg-zinc-100 px-3 pb-8 pt-12 shadow-xl md:px-8 flex-col-center">
-
+    <>
+    
       <div className="mb-4 border-b border-zinc-200 pb-1 flex-row-between w-full">
         <h2 className="text-3xl font-bold text-zinc-700">{page?.title}</h2>
         <Link
@@ -31,6 +31,6 @@ export default async function NamePage({ params }: { params: { id: string } }) {
       <p hidden={!page?.source} className="pt-2 italic text-zinc-500 w-full">
         {content.source}: {page?.source}
       </p>
-    </section>
+    </>
   );
 }
