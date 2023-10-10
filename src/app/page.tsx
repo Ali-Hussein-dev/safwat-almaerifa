@@ -3,9 +3,12 @@ import { getAllPages } from "../../sanity/lib/get-name-page";
 
 const content = {
   h1: "أسماء الله الحسنى",
-  p: "وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا ۖ وَذَرُوا الَّذِينَ يُلْحِدُونَ فِي أَسْمَائِهِ ۚ سَيُجْزَوْنَ مَا كَانُوا يَعْمَلُونَ",
+  p: "تعرف على خالقك كي لاتسئ الظن أو تغتر بماأعطاك و لاتكون حيداً",
 };
-
+export const metadata = {
+  title: "أسماء الله الحسنى",
+  description: "أسمى الله الحسنى مع شرح لكل اسم",
+};
 export default async function RootPage() {
   const pages = (await getAllPages()).sort((a,b)=> +a.slug - +b.slug)
   return (
