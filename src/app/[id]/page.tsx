@@ -1,12 +1,31 @@
-import { getNamePage } from "../../../sanity/lib/get-name-page";
+import { getNamePage, getPageTitle } from "../../../sanity/lib/get-name-page";
 import { PortableText } from "@portabletext/react";
 import { type NamePage } from "@/types/name-project";
 import { BackButton } from "@/components/back-button";
+import type { Metadata } from "next";
+import * as React from "react";
 
 const content = {
   source: "المرجع",
 };
 export const revalidate = 30;
+type Props = {
+  params: { id: string };
+};
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata | undefined> {
+  const article = await getPageTitle(params.id);
+  const title = article?.[0]?.title ?? "";
+  return {
+    title,
+    openGraph: {
+      type: "article",
+      // publishedTime,
+    },
+  };
+}
 
 export default async function NamePage({ params }: { params: { id: string } }) {
   const pageRes = await getNamePage(params.id);
@@ -18,16 +37,18 @@ export default async function NamePage({ params }: { params: { id: string } }) {
         <BackButton />
       </div>
       <div className="prose prose-zinc w-full max-w-3xl grow border-b border-zinc-300 pb-3 pt-4 prose-h2:text-zinc-700">
-        <PortableText
-          value={page.content}
-          components={{
-            block: ({ children }) => (
-              <p className="text-lg leading-relaxed tracking-wide text-zinc-700 md:text-xl">
-                {children}
-              </p>
-            ),
-          }}
-        />
+        <React.Suspense fallback={<p>جاري تحميل المحتوى...</p>}>
+          <PortableText
+            value={page.content}
+            components={{
+              block: ({ children }) => (
+                <p className="text-lg leading-relaxed tracking-wide text-zinc-700 md:text-xl">
+                  {children}
+                </p>
+              ),
+            }}
+          />
+        </React.Suspense>
       </div>
       <p hidden={!page?.source} className="w-full pt-2 italic text-zinc-500">
         {content.source}: {page?.source}

@@ -25,3 +25,12 @@ export async function getAllPages(): Promise<Omit<NamePage, "content">[]> {
     }`,
     );
 }
+
+export async function getPageTitle(slug: string): Promise<NamePage[]> {
+    return client.fetch(
+        `*[_type == "page" && slug.current == $slug]{
+        title
+    }`,
+        { slug }
+    );
+}
