@@ -1,7 +1,8 @@
 import { Tajawal } from "next/font/google";
 import "../styles/globals.css";
 import * as React from "react";
-
+import Link from "next/link";
+import { HiHome } from "react-icons/hi";
 const fontFamily = Tajawal({
   subsets: ["arabic"],
   display: "swap",
@@ -23,6 +24,7 @@ const Footer = () => {
     </div>
   );
 };
+// const Links = [{ name: "الرئيسية", href: "/" }];
 export default function RootLayout({
   children,
 }: {
@@ -32,7 +34,13 @@ export default function RootLayout({
     <html lang="ar" dir="rtl" className={fontFamily.className}>
       <body className="scroll-smooth antialiased">
         <main className="mx-auto flex min-h-screen flex-col justify-between gap-4">
-          <header className="h-12 w-full bg-zinc-100 shadow"></header>
+          <header className="h-12 w-full bg-zinc-100 shadow ">
+            <div className="mx-auto h-12 w-full max-w-3xl px-2 font-semibold text-zinc-700 flex-row-start">
+              <Link href="/">
+                <HiHome size="23" />
+              </Link>
+            </div>
+          </header>
           {children}
           <Footer />
         </main>
