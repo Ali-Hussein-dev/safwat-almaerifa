@@ -4,9 +4,11 @@ import { type NamePage } from "@/types/name-project";
 import { BackButton } from "@/components/back-button";
 import type { Metadata } from "next";
 import * as React from "react";
+import clsx from "clsx";
 
 const content = {
   source: "المرجع",
+  loading: "جاري تحميل المحتوى...",
 };
 export const revalidate = 30;
 type Props = {
@@ -32,22 +34,21 @@ export default async function NamePage({ params }: { params: { id: string } }) {
   const page = pageRes[0]!;
   return (
     <>
-      <div className="mb-4 w-full border-b border-zinc-200 pb-1 flex-row-between">
+      <div className="flex-row-between mb-4 w-full border-b border-zinc-200 pb-1">
         <h2 className="text-3xl font-bold text-zinc-700">{page?.title}</h2>
         <BackButton />
       </div>
-      <div className="prose prose-zinc w-full max-w-3xl grow border-b border-zinc-300 pb-3 pt-4 prose-h2:text-zinc-700">
-        <React.Suspense fallback={<p>جاري تحميل المحتوى...</p>}>
-          <PortableText
-            value={page.content}
-            components={{
-              block: ({ children }) => (
-                <p className="text-lg leading-relaxed tracking-wide text-zinc-700 md:text-xl">
-                  {children}
-                </p>
-              ),
-            }}
-          />
+      <div
+        className={clsx(
+          "prose prose-zinc w-full max-w-3xl grow border-b border-zinc-300 pb-3 pt-4",
+          // h2,h3
+          "prose-h2:text-zinc-700 prose-h3:text-zinc-700",
+          // p
+          "prose-p:text-lg prose-p:leading-relaxed prose-p:tracking-wide prose-p:md:text-xl text-zinc-700",
+        )}
+      >
+        <React.Suspense fallback={<p>{content.loading}</p>}>
+          <PortableText value={page.content} />
         </React.Suspense>
       </div>
       <p hidden={!page?.source} className="w-full pt-2 italic text-zinc-500">
