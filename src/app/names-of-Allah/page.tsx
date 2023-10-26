@@ -14,7 +14,7 @@ const NamesOfAllah = async () => {
   const pages = (await getAllPages()).sort((a, b) => +a.slug - +b.slug);
 
   return (
-    <div className="mx-auto w-full max-w-3xl space-y-4 pt-4 md:pt-20">
+    <div className="mx-auto w-full max-w-3xl space-y-4 px-2 pt-4 md:pt-20">
       <div>
         <h1 className="mb-1 text-center text-lg font-extrabold text-zinc-700 sm:text-2xl md:text-4xl">
           {content.h1}
