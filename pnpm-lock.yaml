@@ -19,6 +19,7 @@ specifiers:
   eslint-config-next: ^13.4.19
   next: ^13.4.19
   next-sanity: '5'
+  nextjs-toploader: ^1.5.3
   postcss: ^8.4.27
   prettier: ^3.0.0
   prettier-plugin-tailwindcss: ^0.5.1
@@ -43,6 +44,7 @@ dependencies:
   clsx: 2.0.0
   next: 13.5.3_biqbaboplfbrettd7655fr4n2y
   next-sanity: 5.5.4_5sp3qibqjcgdhtcezhmjxfqwki
+  nextjs-toploader: 1.5.3_vs65xldtmolprftbsqonkgfxyi
   re-resizable: 6.9.11_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1698,6 +1700,10 @@ packages:
 
   /@types/normalize-package-data/2.4.2:
     resolution: {integrity: sha512-lqa4UEhhv/2sjjIQgjX8B+RBjj47eo0mzGasklVJ78UKGQY1r0VpB9XHDaZZO9qzEFDdy4MrXLuEaSmPrPSe/A==}
+    dev: false
+
+  /@types/nprogress/0.2.2:
+    resolution: {integrity: sha512-2wLrSJXLztGmr7wXwM0hA/wuIOY9DznVdd+ZFofHOiXcj9JnVt+2ZeLRJ7v5ZVlmheSkUOSg3Q3O4Ce7yji79A==}
     dev: false
 
   /@types/prop-types/15.7.8:
@@ -4624,6 +4630,21 @@ packages:
       - babel-plugin-macros
     dev: false
 
+  /nextjs-toploader/1.5.3_vs65xldtmolprftbsqonkgfxyi:
+    resolution: {integrity: sha512-kNqgpOxVeo7ihMZqNzxtsCNcO0lo1NNjxhCtnJ2qgTKxgppMGpuSVU4FTMaCOefamVop1mWk1Ij3C2pBP5NwPg==}
+    peerDependencies:
+      next: '>= 6.0.0'
+      react: '>= 16.0.0'
+      react-dom: '>= 16.0.0'
+    dependencies:
+      '@types/nprogress': 0.2.2
+      next: 13.5.3_biqbaboplfbrettd7655fr4n2y
+      nprogress: 0.2.0
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /node-releases/2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
 
@@ -4650,6 +4671,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-key: 3.1.1
+    dev: false
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
     dev: false
 
   /nwsapi/2.2.7:
