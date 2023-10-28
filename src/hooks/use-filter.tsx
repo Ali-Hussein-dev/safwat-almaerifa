@@ -1,24 +1,24 @@
-"use client";
-import { type NamePage } from "@/types/name-project";
 import * as React from "react";
 
-export const useFilter = ({
+export interface UseFilterOptions<T = object> {
+  list: T[];
+  filterFn: (item: T, input: string) => boolean;
+}
+
+export const useFilter = <T,>({
   list = [],
-}: {
-  list: Omit<NamePage, "content">[];
-}) => {
+  filterFn: filterFn,
+}: UseFilterOptions<T>) => {
   const [input, setInput] = React.useState("");
   const [filtered, setFiltered] = React.useState(list);
+
   React.useEffect(() => {
     if (Array.isArray(list)) {
-      const trimedInput = input.trim();
-      const filterByInput = (item: Omit<NamePage, "content">) =>
-        item.key.includes(trimedInput);
-      const filteredList = list.filter(filterByInput);
-      console.log("filtering...", input);
+      const trimmedInput = input.trim();
+      const filteredList = list.filter((item) => filterFn(item, trimmedInput));
       setFiltered(filteredList);
     }
-  }, [input, list]);
+  }, [input, list, filterFn]);
 
   return { filtered, input, setInput };
 };

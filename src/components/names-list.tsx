@@ -1,5 +1,5 @@
 "use client";
-import { useFilter } from "@/hooks/use-filter-2";
+import { useFilter } from "@/hooks/use-filter";
 import { type NamePage } from "@/types/name-project";
 import dynamic from "next/dynamic";
 
