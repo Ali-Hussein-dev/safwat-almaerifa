@@ -18,7 +18,8 @@ export const useFilter = <T,>({
       const filteredList = list.filter((item) => filterFn(item, trimmedInput));
       setFiltered(filteredList);
     }
-  }, [input, list, filterFn]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [input, list]);
 
   return { filtered, input, setInput };
 };
