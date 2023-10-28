@@ -47,7 +47,7 @@ const Overlay = () => (
 );
 export const Hero = () => {
   return (
-    <section className="mx-auto max-w-3xl pt-4 md:pt-28">
+    <section className="mx-auto max-w-3xl pb-10 pt-4 md:pt-28">
       <div className="grid gap-4 text-zinc-700 md:grid-cols-2 md:gap-7">
         {list.map((item, i) => (
           <Link

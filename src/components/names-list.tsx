@@ -1,5 +1,5 @@
 "use client";
-import { useFilter } from "@/hooks/use-filter";
+import { useFilter } from "@/hooks/use-filter-2";
 import { type NamePage } from "@/types/name-project";
 import dynamic from "next/dynamic";
 
@@ -21,7 +21,7 @@ const CardSkeleton = () => (
       <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
       <div className="h-4 w-36 animate-pulse rounded bg-zinc-200 duration-300" />
     </div>
-    <div className="w-full flex-row-between">
+    <div className="flex-row-between w-full">
       <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-300" />
       <div className="h-4 w-4 animate-pulse rounded-xl bg-zinc-200 duration-300" />
     </div>
@@ -41,10 +41,11 @@ export const NamesList = ({
 }) => {
   const { filtered, input, setInput } = useFilter({
     list: names,
+    filterFn: (item, input) => item.key.includes(input),
   });
 
   return (
-    <>
+    <div className="grow">
       <DynamicInput input={input} setInput={setInput} />
       <div className="mx-auto w-full">
         <section className="sm:masonry-cols-2 md:masonry-cols-3 w-full space-y-5 pb-12">
@@ -59,6 +60,6 @@ export const NamesList = ({
           ))}
         </section>
       </div>
-    </>
+    </div>
   );
 };
