@@ -3,6 +3,7 @@ import { useHotkeys } from "@mantine/hooks";
 import * as React from "react";
 import { FaSearch } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+let navigator: Navigator;
 
 const content = {
   placeholder: "ابحث",
@@ -24,7 +25,7 @@ export function FilterInput({ input, setInput }: Props) {
   };
   useHotkeys([["mod+K", () => setFocus()]]);
   return (
-    <div className="flex-row-start mb-2 w-full gap-1 rounded border border-zinc-200 bg-gradient-to-t from-zinc-50 to-transparent px-3 duration-300 focus-within:border-zinc-300 focus-within:shadow-xl">
+    <div className="mb-2 w-full gap-1 rounded border border-zinc-200 bg-gradient-to-t from-zinc-50 to-transparent px-3 duration-300 flex-row-start focus-within:border-zinc-300 focus-within:shadow-xl">
       <FaSearch className="text-zinc-300" />
       <input
         ref={inputRef}
@@ -45,7 +46,9 @@ export function FilterInput({ input, setInput }: Props) {
         </button>
       ) : (
         <span className="hidden text-zinc-500 md:inline-block">
-          {navigator.userAgent.includes("Mac") ? "cmd+K" : "ctrl+K"}
+          {navigator && navigator.userAgent.includes("Mac")
+            ? "cmd+K"
+            : "ctrl+K"}
         </span>
       )}
     </div>
