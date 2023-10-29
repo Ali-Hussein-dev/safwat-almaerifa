@@ -3,7 +3,7 @@ import * as React from "react";
 import { QuranTopics } from "@/components/quran-topics";
 
 const content = {
-  h1: "مواضيع السور في القرآن الكريم",
+  h1: "مواضيع سور القرآن الكريم",
   description: "شرح مختصر لمواضيع السور التي تساعد على الفهم والتدبر",
   loading: "جاري التحميل...",
 };
@@ -30,3 +30,4 @@ const QuranTopicsPage = async () => {
 };
 
 export default QuranTopicsPage;
+
