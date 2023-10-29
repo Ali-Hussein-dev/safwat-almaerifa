@@ -27,3 +27,9 @@
         break-inside: avoid;
     }
 }
+.text-grad {
+    background: linear-gradient(to left, #00FF00 10%, #00FFFF 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
