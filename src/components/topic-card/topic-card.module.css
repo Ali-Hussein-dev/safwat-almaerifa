@@ -9,4 +9,5 @@
 .group:hover .shape-octagon,
 .shape-octagon:hover {
     background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, #65a30d 170%);
+    color: #65a30d;
 }

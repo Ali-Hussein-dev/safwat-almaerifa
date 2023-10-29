@@ -11,7 +11,7 @@ export const TopicCard: React.FC<TopicProps> = ({ order, title }) => {
     <Link
       href={`/quran-topics/${order}`}
       className={clsx(
-        "rounded border-b-2 border-transparent bg-gradient-to-t from-zinc-100 to-transparent px-4 py-6 shadow-lg duration-300 hover:border-zinc-500",
+        "rounded border-b-2 border-transparent bg-gradient-to-t px-4 py-6 shadow-lg duration-300 hover:border-zinc-500",
         css.group,
       )}
     >
