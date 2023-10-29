@@ -1,0 +1,12 @@
+.shape-octagon {
+    background: #FFFFFF;
+    background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, #a1a1aa 170%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    transition: background 0.3s ease;
+}
+
+
+.group:hover .shape-octagon,
+.shape-octagon:hover {
+    background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, #65a30d 170%);
+}

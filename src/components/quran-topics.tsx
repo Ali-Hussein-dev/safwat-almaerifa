@@ -3,7 +3,7 @@ import { useFilter } from "@/hooks/use-filter";
 import { type QuranTopic } from "../../sanity/lib/get-quran-topics";
 import * as React from "react";
 import { FilterInput } from "./filter-input";
-import { TopicCard } from "./topic-card";
+import { TopicCard } from "./topic-card/topic-card";
 
 type ListItem = Pick<QuranTopic, "title" | "order">;
 
