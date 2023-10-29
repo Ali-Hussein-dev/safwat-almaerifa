@@ -12,7 +12,7 @@ const QuranTopicsPage = async () => {
   const res = await getQuranTopicsTitles();
   return (
     <div className="grow">
-      <div className="mx-auto max-w-3xl pt-4 text-zinc-700 md:pt-12">
+      <div className="mx-auto max-w-3xl pb-8 pt-4 text-zinc-700 md:pt-12">
         <div className="mb-8 ">
           <h1 className="mb-1 text-center text-2xl font-bold text-lime-600">
             {content.h1}
