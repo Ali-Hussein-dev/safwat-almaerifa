@@ -20,12 +20,14 @@ export async function generateMetadata({
 }: Props): Promise<Metadata | undefined> {
   const article = await getPageTitle(params.id);
   const title = article?.[0]?.title ?? "";
+  const description = article?.[0]?.description ?? "";
   return {
     title,
-    openGraph: {
-      type: "article",
-      // publishedTime,
-    },
+    description,
+    // openGraph: {
+    //   type: "article",
+    //   // publishedTime,
+    // },
   };
 }
 
@@ -34,7 +36,7 @@ export default async function NamePage({ params }: { params: { id: string } }) {
   const page = pageRes[0]!;
   return (
     <>
-      <div className="flex-row-between mb-4 w-full border-b border-zinc-200 pb-1">
+      <div className="mb-4 w-full border-b border-zinc-200 pb-1 flex-row-between">
         <h2 className="text-3xl font-bold text-zinc-700">{page?.title}</h2>
         <BackButton />
       </div>
@@ -44,11 +46,13 @@ export default async function NamePage({ params }: { params: { id: string } }) {
           // h2,h3
           "prose-h2:text-zinc-700 prose-h3:text-zinc-700",
           // p
-          "prose-p:text-lg prose-p:leading-relaxed prose-p:tracking-wide prose-p:md:text-xl text-zinc-700",
+          "text-zinc-700 prose-p:text-lg prose-p:leading-relaxed prose-p:tracking-wide prose-p:md:text-xl",
         )}
       >
-        <React.Suspense fallback={<p>{content.loading}</p>}>
-          <PortableText value={page.content} />
+        <React.Suspense
+          fallback={<p className="w-full text-center">{content.loading}</p>}
+        >
+          <PortableText value={page?.content} />
         </React.Suspense>
       </div>
       <p hidden={!page?.source} className="w-full pt-2 italic text-zinc-500">
