@@ -55,12 +55,12 @@ const Overlay = () => (
 );
 
 const content = {
-  p: "المواضيع التي يحتاجها كل مسلم",
+  p: "المواضيع التي يحتاجها كل مسلم والتي تستهدف النفس والقلب والعقل",
 };
 export const Hero = () => {
   return (
     <section className="mx-auto max-w-3xl pb-10 pt-4 text-zinc-700 md:pt-28">
-      <p className="text-center text-lg font-semibold text-lime-600">
+      <p className="px-3 text-center text-lg font-semibold text-lime-600">
         {content.p}
       </p>
       <div className="grid gap-4 md:grid-cols-2 md:gap-7">
@@ -83,7 +83,9 @@ export const Hero = () => {
             </div>
             <div className="px-2 pb-4 pt-7 md:px-4">
               <div className="space-y-1 text-center">
-                <h2 className="text-xl font-bold">{item.name}</h2>
+                <h2 className="text-grad-zinc text-2xl font-bold">
+                  {item.name}
+                </h2>
                 <p>{item.description}</p>
               </div>
               {item.status === "soon" && <Overlay />}
