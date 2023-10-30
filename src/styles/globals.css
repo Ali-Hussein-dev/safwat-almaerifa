@@ -27,8 +27,15 @@
         break-inside: avoid;
     }
 }
-.text-grad {
-    background: linear-gradient(to left, #00FF00 10%, #00FFFF 90%);
+.text-grad-zinc {
+    background: linear-gradient(to top, #27272a 10%, #a1a1aa 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-grad-lime {
+    background: linear-gradient(to top, #84cc16 40%, #bef264 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

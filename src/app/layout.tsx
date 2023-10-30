@@ -7,7 +7,7 @@ import NextTopLoader from "nextjs-toploader";
 
 const fontFamily = Tajawal({
   subsets: ["arabic"],
-  display: "swap",
+  display: "auto",
   weight: ["200", "300", "400", "500", "700", "800", "900"],
 });
 

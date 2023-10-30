@@ -11,7 +11,7 @@ export const TopicCard: React.FC<TopicProps> = ({ order, title }) => {
     <Link
       href={`/quran-topics/${order}`}
       className={clsx(
-        "rounded border-b-2 border-transparent bg-gradient-to-t px-4 py-6 shadow-lg duration-300 hover:border-zinc-500",
+        "group rounded border-b-2 border-transparent bg-gradient-to-t px-4 py-6 shadow-lg duration-300 hover:border-lime-500",
         css.group,
       )}
     >
@@ -24,7 +24,9 @@ export const TopicCard: React.FC<TopicProps> = ({ order, title }) => {
         >
           <span>{order}</span>
         </span>
-        <span className="text-xl font-bold text-zinc-500">{title}</span>
+        <span className="text-xl font-bold text-zinc-500 group-hover:text-lime-600">
+          {title}
+        </span>
       </div>
     </Link>
   );
