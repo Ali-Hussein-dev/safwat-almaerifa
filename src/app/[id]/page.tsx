@@ -32,6 +32,7 @@ export default async function NamePage({ params }: { params: { id: string } }) {
   return (
     <>
       <ReadingPage
+        grow
         top={
           <div className="mb-4 w-full border-b border-zinc-200 pb-1 flex-row-between">
             <h2 className="text-3xl font-bold">{page?.title}</h2>

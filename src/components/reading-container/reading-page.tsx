@@ -22,10 +22,12 @@ export const ReadingPage = ({
   body,
   bottom,
   top,
+  grow,
 }: {
   body: React.ReactNode;
   top?: React.ReactNode;
   bottom?: React.ReactNode;
+  grow?: boolean;
 }) => {
   const { theme, textSize, inc, dec, setTheme } = usePreferences();
   return (
@@ -59,7 +61,9 @@ export const ReadingPage = ({
         <BackButton />
       </div>
       {top}
-      <div className={classes.textSize[textSize]}>{body}</div>
+      <div className={clsx(classes.textSize[textSize], grow && "grow")}>
+        {body}
+      </div>
       {bottom}
     </div>
   );
