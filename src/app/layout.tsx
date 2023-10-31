@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { HiHome } from "react-icons/hi";
 import NextTopLoader from "nextjs-toploader";
+import { Footer } from "./components/Footer";
 
 const fontFamily = Tajawal({
   subsets: ["arabic"],
@@ -11,21 +12,6 @@ const fontFamily = Tajawal({
   weight: ["200", "300", "400", "500", "700", "800", "900"],
 });
 
-const Footer = () => {
-  return (
-    <div
-      className="isolate mx-auto h-14 w-full border-t border-zinc-300 bg-gradient-to-t from-zinc-950 to-zinc-700 px-2 py-2 text-zinc-100 flex-row-center"
-      dir="ltr"
-    >
-      <div className="z-10 max-w-3xl">
-        Made by{" "}
-        <a href="https://ali-hussein.com" className="underline">
-          A.H
-        </a>
-      </div>
-    </div>
-  );
-};
 // const Links = [{ name: "الرئيسية", href: "/" }];
 export default function RootLayout({
   children,
