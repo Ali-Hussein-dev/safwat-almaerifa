@@ -14,7 +14,7 @@ export const QuranIframe = ({
   return (
     <div className="flex h-full w-full grow flex-col items-center justify-start space-y-4 border-t border-zinc-300 pt-4">
       <button
-        className="hover:shadoe-lg rounded-lg bg-zinc-200 px-4 py-2 font-semibold text-zinc-700 duration-300 hover:bg-zinc-800 hover:text-zinc-100"
+        className="rounded-lg border border-zinc-300 bg-zinc-100 px-8 py-2 text-lg font-semibold text-zinc-700 duration-300 hover:bg-zinc-800 hover:text-zinc-100"
         onClick={() => setOpen(!open)}
       >
         {open ? content.open : content.close}
