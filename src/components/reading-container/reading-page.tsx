@@ -8,7 +8,12 @@ import { ActionIcon } from "../action-icon";
 const classes = {
   dark: "bg-zinc-800 text-zinc-300",
   light: "bg-zinc-100 text-zinc-700 text-zinc-700",
-  textSize: ["text-lg", "text-xl", "text-2xl", "text-3xl", "text-4xl"],
+  textSize: [
+    "text-lg",
+    "text-xl",
+    "text-2xl",
+    "text-3xl font-light leading-lose",
+  ],
 };
 const usePreferences = () => {
   const [theme, setTheme] = React.useState<"dark" | "light">("light");
@@ -34,8 +39,7 @@ export const ReadingPage = ({
     <div
       className={clsx(
         "flex flex-col gap-1",
-        "shadow-side mx-auto h-full w-full max-w-[700px] grow rounded px-4 pb-6 shadow-xl duration-150 md:px-6",
-        "leading-relaxed tracking-wide",
+        "shadow-side mx-auto h-full w-full max-w-[755px] grow rounded px-3 pb-6 shadow-xl duration-150 md:px-8",
         classes[theme],
       )}
     >
@@ -61,7 +65,14 @@ export const ReadingPage = ({
         <BackButton />
       </div>
       {top}
-      <div className={clsx(classes.textSize[textSize], grow && "grow")}>
+      <div
+        className={clsx(
+          "prose prose-zinc max-w-full",
+          theme === "dark" && "prose-invert",
+          classes.textSize[textSize],
+          grow && "grow",
+        )}
+      >
         {body}
       </div>
       {bottom}
