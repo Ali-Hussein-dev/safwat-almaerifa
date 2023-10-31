@@ -39,7 +39,7 @@ export const ReadingPage = ({
     <div
       className={clsx(
         "flex flex-col gap-1",
-        "shadow-side mx-auto h-full w-full max-w-[755px] grow rounded px-3 pb-6 shadow-xl duration-150 md:px-8",
+        "shadow-side mx-auto h-full w-full max-w-[755px] grow px-3 pb-6 shadow-xl duration-150 sm:rounded md:px-8",
         classes[theme],
       )}
     >
