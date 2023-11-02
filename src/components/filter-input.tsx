@@ -1,5 +1,6 @@
 "use client";
 import { useHotkeys } from "@mantine/hooks";
+import dynamic from "next/dynamic";
 import * as React from "react";
 import { FaSearch } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
@@ -54,3 +55,13 @@ export function FilterInput({ input, setInput }: Props) {
     </div>
   );
 }
+
+export const DynamicFilterInput = dynamic(
+  () => import("./filter-input").then((r) => r.FilterInput),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="mb-2 h-12 w-full animate-pulse rounded bg-zinc-100 duration-300" />
+    ),
+  },
+);

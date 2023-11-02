@@ -2,16 +2,7 @@
 import { useFilter } from "@/hooks/use-filter";
 import { type NamePage } from "@/types/name-project";
 import dynamic from "next/dynamic";
-
-const DynamicInput = dynamic(
-  () => import("./filter-input").then((r) => r.FilterInput),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="mb-2 h-12 w-full animate-pulse rounded bg-zinc-100 duration-300" />
-    ),
-  },
-);
+import { DynamicFilterInput } from "./filter-input";
 
 const CardSkeleton = () => (
   <div className="break-inside w-full space-y-5 rounded bg-zinc-50 p-7 shadow">
@@ -21,7 +12,7 @@ const CardSkeleton = () => (
       <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
       <div className="h-4 w-36 animate-pulse rounded bg-zinc-200 duration-300" />
     </div>
-    <div className="flex-row-between w-full">
+    <div className="w-full flex-row-between">
       <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-300" />
       <div className="h-4 w-4 animate-pulse rounded-xl bg-zinc-200 duration-300" />
     </div>
@@ -46,7 +37,7 @@ export const NamesList = ({
 
   return (
     <div className="grow">
-      <DynamicInput input={input} setInput={setInput} />
+      <DynamicFilterInput input={input} setInput={setInput} />
       <div className="mx-auto w-full">
         <section className="sm:masonry-cols-2 md:masonry-cols-3 w-full space-y-5 pb-12">
           {filtered?.map((o) => (
