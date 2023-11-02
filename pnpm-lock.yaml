@@ -33,7 +33,7 @@ specifiers:
   tailwindcss: ^3.3.3
   typescript: ^5.1.6
   zod: ^3.21.4
-  zustand: ^4.4.2
+  zustand: ^4.4.5
 
 dependencies:
   '@mantine/hooks': 7.1.2_react@18.2.0
@@ -52,7 +52,7 @@ dependencies:
   sanity: 3.16.7_rqodjovp4g52pdqgwt2uofesdq
   styled-components: 5.2.3_biqbaboplfbrettd7655fr4n2y
   zod: 3.22.2
-  zustand: 4.4.2_qplb6sntkpqlhms5ct4t6n64ve
+  zustand: 4.4.5_qplb6sntkpqlhms5ct4t6n64ve
 
 devDependencies:
   '@tailwindcss/typography': 0.5.10_tailwindcss@3.3.3
@@ -6665,8 +6665,8 @@ packages:
     resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
     dev: false
 
-  /zustand/4.4.2_qplb6sntkpqlhms5ct4t6n64ve:
-    resolution: {integrity: sha512-qF3/vZHCrjPUX5DvPE3DPDZlh+FiAWRKlP9PI7SlW1MCk8q4vUCDqyWsbF8K41ne0Yx8eeeb0m1cypn1LqUMYQ==}
+  /zustand/4.4.5_qplb6sntkpqlhms5ct4t6n64ve:
+    resolution: {integrity: sha512-jgIrBBLKncQW74PA2Lclct3gwD4aPughwGE4FqlXrv3rDqQox7JCn8rwUiFK6ygJcbBAvfTf8fF+ICg7HLD2FQ==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
       '@types/react': '>=16.8'
