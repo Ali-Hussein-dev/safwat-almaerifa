@@ -18,7 +18,7 @@ export const Footer = () => {
             {content.creator}
           </a>
         </div>
-        <Link href="/references" className="underline">
+        <Link href="/references" className="">
           {content.references}
         </Link>
       </div>
