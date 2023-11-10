@@ -12,6 +12,8 @@
   "dependencies": {
     "@mantine/hooks": "^7.1.2",
     "@portabletext/react": "^3.0.9",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tabs": "^1.0.4",
     "@sanity/image-url": "1",
     "@sanity/vision": "3",
     "@t3-oss/env-nextjs": "^0.6.0",
@@ -38,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "autoprefixer": "^10.4.14",
+    "class-variance-authority": "^0.7.0",
     "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.19",
     "postcss": "^8.4.27",

@@ -1,12 +1,13 @@
 "use client";
 import { useFilter } from "@/hooks/use-filter";
-import { type NamePage } from "@/types/name-project";
+import { DynamicFilterInput } from "@/components/filter-input";
+import type { NamePage } from "@/types/name-project";
 import dynamic from "next/dynamic";
-import { DynamicFilterInput } from "./filter-input";
+import { TabsContent } from "@/components/ui/tabs";
 
 const CardSkeleton = () => (
   <div className="break-inside w-full space-y-5 rounded bg-zinc-50 p-7 shadow">
-    <div className="space-y-2">
+    <div className="space-y-2 duration-500">
       <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-300" />
       <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
       <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
@@ -18,6 +19,7 @@ const CardSkeleton = () => (
     </div>
   </div>
 );
+
 const DynamicNameCard = dynamic(
   () => import("./name-card").then((r) => r.NameCard),
   {
@@ -25,7 +27,8 @@ const DynamicNameCard = dynamic(
     loading: () => <CardSkeleton />,
   },
 );
-export const NamesList = ({
+//======================================
+export const TabContentFullList = ({
   names,
 }: {
   names: Omit<NamePage, "content">[];
@@ -34,23 +37,20 @@ export const NamesList = ({
     list: names,
     filterFn: (item, input) => item.key.includes(input),
   });
-
   return (
-    <div className="grow">
+    <TabsContent value="all" className="pt-5">
       <DynamicFilterInput input={input} setInput={setInput} />
-      <div className="mx-auto w-full">
-        <section className="sm:masonry-cols-2 md:masonry-cols-3 w-full space-y-5 pb-12">
-          {filtered?.map((o) => (
-            <DynamicNameCard
-              key={o._id}
-              title={o.title}
-              slug={o.slug}
-              description={o.description}
-              _id={o._id}
-            />
-          ))}
-        </section>
+      <div className="sm:masonry-cols-2 md:masonry-cols-3 w-full space-y-5 pb-12 pt-4">
+        {filtered?.map((o) => (
+          <DynamicNameCard
+            key={o.slug}
+            _id={o._id}
+            title={o.title}
+            slug={o.slug}
+            description={o.description}
+          />
+        ))}
       </div>
-    </div>
+    </TabsContent>
   );
 };

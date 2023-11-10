@@ -1,5 +1,4 @@
-import { NamesList } from "@/components/names-list";
-import { getAllPages } from "../../../sanity/lib/get-name-page";
+import { AllahNamesTabs } from "@/components/God-Names/Allah-names-tabs";
 import { H1 } from "@/components/headers";
 
 const content = {
@@ -12,16 +11,14 @@ export const metadata = {
   category: "أسماء الله الحسنى",
 };
 
-const NamesOfAllah = async () => {
-  const pages = (await getAllPages()).sort((a, b) => +a.slug - +b.slug);
-
+const NamesOfAllah = () => {
   return (
-    <div className="mx-auto w-full max-w-3xl grow space-y-4 px-2 pt-4 md:pt-20">
+    <div className="mx-auto w-full max-w-3xl grow space-y-6 px-2 pt-4 md:pt-20">
       <div>
         <H1 value={content.h1} />
         <p className="text-center text-lg text-zinc-600">{content.p}</p>
       </div>
-      <NamesList names={pages} />
+      <AllahNamesTabs />
     </div>
   );
 };
