@@ -8,7 +8,7 @@ const content = {
 export const Footer = () => {
   return (
     <div
-      className="isolate mx-auto h-14 w-full border-t border-zinc-300 bg-gradient-to-t from-zinc-950 to-zinc-700 px-2 py-2 text-zinc-100 flex-row-center"
+      className="isolate mx-auto h-20 w-full border-t border-zinc-300 bg-gradient-to-t from-zinc-950 to-zinc-800 px-2 py-2 text-zinc-100 flex-row-center"
       dir="ltr"
     >
       <div className="w-full max-w-3xl gap-3 flex-row-center">

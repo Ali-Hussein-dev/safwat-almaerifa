@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { HiHome } from "react-icons/hi";
 import NextTopLoader from "nextjs-toploader";
-import { Footer } from "./components/Footer";
+import { Footer } from "@/components/Footer";
 
 const fontFamily = Tajawal({
   subsets: ["arabic"],
