@@ -8,10 +8,10 @@ export const TabContentSimilarNames = async () => {
   const list = await getSimilarNames();
   return (
     <TabsContent value="similars" className="pt-5">
-      <div className="w-full gap-8 bg-zinc-50 flex-col-center">
+      <div className="w-full gap-8 flex-col-center">
         {list.map((o, i) => (
           <div
-            className="rounded-xl border-[0.5px] border-b-2 border-zinc-300 px-4 py-8 shadow-lg"
+            className="rounded-xl border-[0.5px] border-b-2 border-zinc-300 bg-zinc-50 px-4 py-8 shadow-lg"
             key={i}
           >
             <div className="relative mb-4 gap-1 flex-row-center">
