@@ -1,9 +1,14 @@
 import Link from "next/link";
-
+import { FaXTwitter } from "react-icons/fa6";
 const content = {
   references: "المراجع المعتمدة",
   madeBy: " تصميم وتطوير ",
-  creator: "ع.ح",
+  links: [
+    {
+      href: "https://twitter.com/safwatelma3refa",
+      icon: <FaXTwitter size="17" />,
+    },
+  ],
 };
 export const Footer = () => {
   return (
@@ -12,13 +17,24 @@ export const Footer = () => {
       dir="ltr"
     >
       <div className="w-full max-w-3xl gap-3 flex-row-center">
+        <div className="">
+          {content.links.map((link, i) => (
+            <span key={i} className="center">
+              <a
+                href={link.href}
+                className=" text-zinc-100 hover:text-zinc-200"
+              >
+                {link.icon}
+              </a>
+            </span>
+          ))}
+        </div>
         <div>
-          <span>{content.madeBy}</span>
-          <a href="https://ali-hussein.com" className="mr-1 underline">
-            {content.creator}
+          <a href="https://ali-hussein.com" className="hover:font-medium">
+            {content.madeBy}
           </a>
         </div>
-        <Link href="/references" className="">
+        <Link href="/references" className="hover:font-medium">
           {content.references}
         </Link>
       </div>
