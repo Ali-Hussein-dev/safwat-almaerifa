@@ -7,15 +7,15 @@ import { TabsContent } from "@/components/ui/tabs";
 
 const CardSkeleton = () => (
   <div className="break-inside w-full space-y-5 rounded bg-zinc-50 p-7 shadow">
-    <div className="space-y-2 duration-500">
-      <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-300" />
-      <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
-      <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-300" />
-      <div className="h-4 w-36 animate-pulse rounded bg-zinc-200 duration-300" />
+    <div className="space-y-2 duration-1000">
+      <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-1000" />
+      <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-1000" />
+      <div className="h-4 w-full animate-pulse rounded bg-zinc-200 duration-1000" />
+      <div className="h-4 w-36 animate-pulse rounded bg-zinc-200 duration-1000" />
     </div>
     <div className="w-full flex-row-between">
-      <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-300" />
-      <div className="h-4 w-4 animate-pulse rounded-xl bg-zinc-200 duration-300" />
+      <div className="h-4 w-10 animate-pulse rounded bg-zinc-200 duration-1000" />
+      <div className="h-4 w-4 animate-pulse rounded-xl bg-zinc-200 duration-1000" />
     </div>
   </div>
 );
