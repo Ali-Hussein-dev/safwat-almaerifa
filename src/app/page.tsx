@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero/Hero";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "مواضيع إسلامية أساسية",
+  title: "صفوة المعرفة",
   description: "المواضيع الإسلامية التي يحتاجها كل مسلم",
   category: "إسلام",
 };
