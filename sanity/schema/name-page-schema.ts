@@ -1,6 +1,6 @@
 const namePageSchema = {
     name: "page",
-    title: "Pages",
+    title: "أسماء الله الحسنى",
     type: "document",
     fields: [
         {
