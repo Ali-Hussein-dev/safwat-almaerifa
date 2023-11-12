@@ -8,6 +8,9 @@ const content = {
   description: "أَعْدَى عَدُوِّكَ نفسُكَ التى بين جَنْبَيْكَ",
 };
 
+export const metadata = {
+  title: "المهلكات",
+};
 export default async function RuinersPage() {
   const list = await getRuiners();
   return (
