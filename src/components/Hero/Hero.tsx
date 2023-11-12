@@ -18,9 +18,9 @@ const list = [
     status: "done",
   },
   {
-    name: "معرفة النفس",
-    description: "وَفِي أَنفُسِكُمْ ۚ أَفَلَا تُبْصِرُونَ",
-    href: "/",
+    name: "المهلكات",
+    description: "أَعْدَى عَدُوِّكَ نفسُكَ التى بين جَنْبَيْكَ",
+    href: "/ruiners",
     status: "soon",
   },
   {
