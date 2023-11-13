@@ -54,14 +54,16 @@ const Overlay = () => (
 );
 
 const content = {
-  p: "المواضيع التي يحتاجها كل مسلم والتي تستهدف النفس والقلب والعقل",
+  h1: "صفوة المعرفة",
+  p: "مواضيع تستهدف النفس والقلب والعقل التي يحتاجها كل مسلم",
 };
 export const Hero = () => {
   return (
     <section className="mx-auto max-w-3xl pb-10 pt-4 text-zinc-700 md:pt-28">
-      <p className="px-3 text-center text-lg font-semibold text-lime-600">
-        {content.p}
-      </p>
+      <h1 className="text-grad-lime mb-1 text-center text-3xl font-black lg:text-4xl">
+        {content.h1}
+      </h1>
+      <p className="px-3 text-center text-lg font-medium">{content.p}</p>
       <div className="grid gap-4 md:grid-cols-2 md:gap-7">
         {list.map((item, i) => (
           <Link
