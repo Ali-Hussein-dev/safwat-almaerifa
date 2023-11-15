@@ -61,7 +61,7 @@ export const DynamicFilterInput = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="mb-2 h-12 w-full animate-pulse rounded bg-zinc-100 duration-300" />
+      <div className="mb-2 h-12 w-full animate-pulse rounded bg-zinc-100 duration-1000" />
     ),
   },
 );

@@ -20,7 +20,7 @@ export const TabContentSimilarNames = async () => {
                 {o.title}
               </h2>
             </div>
-            <article className="prose max-w-4xl prose-headings:text-zinc-400 prose-p:text-lg">
+            <article className="prose max-w-4xl prose-headings:text-zinc-400 prose-p:text-lg prose-p:leading-10">
               <PortableText value={o.content} />
             </article>
           </div>

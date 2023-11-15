@@ -5,10 +5,12 @@ export type QuranTopic = {
     title: string;
     content: TypedObject;
     order: number;
+    description: string;
 }
-export const getQuranTopicsTitles = async (): Promise<Pick<QuranTopic, "title" | "order">[]> => await client.fetch(`*[_type == "quranTopics"] | order(order) {
+export const getQuranTopicsTitles = async (): Promise<Pick<QuranTopic, "title" | "order" | "description">[]> => await client.fetch(`*[_type == "quranTopics"] | order(order) {
     title, 
-    order
+    order,
+    description
 }`)
 
 export const getQuranTopicContent = async (order: number): Promise<QuranTopic[]> => await client.fetch(`*[_type=="quranTopics" && order == $order] {

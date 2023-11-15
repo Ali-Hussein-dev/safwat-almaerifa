@@ -1,12 +1,17 @@
 const QuranTopicsSchema = {
     name: "quranTopics",
-    title: "Quran Topics",
+    title: "مواضيع السور",
     type: "document",
     fields: [
         {
             name: "title",
             title: "Topic Title",
             type: "string",
+        },
+        {
+            name: "description",
+            title: "شرح مختصر",
+            type: "text",
         },
         {
             name: "content",
