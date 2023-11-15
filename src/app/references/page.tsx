@@ -7,6 +7,7 @@ const content = {
     },
     { label: "موقع القرآن الكريم", href: "https://quran.com/" },
     { label: "موقع الدرر السنية", href: "https://dorar.net/tafseer" },
+    { label: "موقع موضوعات", href: "https://almalomat.com/" },
   ],
 };
 export const metadata = {
