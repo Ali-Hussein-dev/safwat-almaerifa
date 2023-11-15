@@ -7,7 +7,9 @@
 
 
 .group:hover .shape-octagon,
-.shape-octagon:hover {
-    background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, #65a30d 170%);
-    color: #65a30d;
+.shape-octagon {
+    /* background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, hsla(85, 85%, 35%, .7) 170%);
+    color: #65a30d; */
+    background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, hsl(175, 77%, 26%, .5) 170%);
+    color: #0f766e;
 }
