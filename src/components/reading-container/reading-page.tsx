@@ -58,7 +58,7 @@ export const ReadingPage = ({
       {top}
       <div
         className={clsx(
-          "prose prose-zinc max-w-full",
+          "prose prose-zinc max-w-full prose-p:leading-10",
           theme === "dark" && "prose-invert",
           classes.textSize[fontSize],
           grow && "grow",
