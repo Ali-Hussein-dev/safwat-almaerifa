@@ -27,13 +27,13 @@ export default async function RuinersPage() {
               <Link
                 href={`/ruiners/${o.slug}`}
                 key={i}
-                className="group rounded border-b-2 border-transparent bg-gradient-to-t from-zinc-100 to-transparent px-3 py-4 shadow-lg  duration-300 hover:border-lime-400"
+                className="group rounded border-b-2 border-transparent bg-gradient-to-t from-zinc-100 to-transparent px-3 py-4 shadow-lg  duration-300 hover:border-primary-400"
               >
                 <div className="mb-3 gap-2 flex-row-start ">
                   <span
                     className={clsx(
-                      "center h-7 w-7 rounded-full border border-lime-400 font-semibold text-lime-500 duration-300",
-                      "group-hover:bg-lime-500 group-hover:text-white",
+                      "center h-7 w-7 rounded-full border border-primary-400 font-semibold text-primary-500 duration-300",
+                      "group-hover:bg-primary-500 group-hover:text-white",
                     )}
                   >
                     {o.slug}

@@ -26,10 +26,14 @@ export function NameCard({
         <p className="font-light text-zinc-500">{description}</p>
       </div>
       <div className="flex-row-between">
-        <Link href={`/${slug}`} className="text-lime-500">
+        <Link href={`/${slug}`} className="text-primary-500">
           {content.read}
         </Link>
-        <button type="button" onClick={onClick} className="p-1 text-lime-600">
+        <button
+          type="button"
+          onClick={onClick}
+          className="p-1 font-medium text-primary-500"
+        >
           {marked ? (
             <BsFillBookmarkCheckFill size="20" />
           ) : (
