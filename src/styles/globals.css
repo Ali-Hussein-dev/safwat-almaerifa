@@ -36,7 +36,7 @@
 }
 
 .text-grad-primary {
-    background: linear-gradient(to right, #1C9DFF 0%, #78FECF 50%);
+    background: linear-gradient(to right, #1C9DFF 10%, #09FDA7 50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
