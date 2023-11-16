@@ -25,6 +25,22 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      colors: {
+        primary: {
+          DEFAULT: '#40FEBB',
+          50: '#FFFFFF',
+          100: '#FFFFFF',
+          200: '#F2FFFA',
+          300: '#C9FFEC',
+          400: '#A1FEDD',
+          500: '#78FECF',
+          600: '#40FEBB',
+          700: '#09FDA7',
+          800: '#02CC85',
+          900: '#019561',
+          950: '#01794F'
+        },
+      }
     },
   },
   plugins: [

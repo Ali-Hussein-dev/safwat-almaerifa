@@ -35,8 +35,8 @@
     color: transparent;
 }
 
-.text-grad-lime {
-    background: linear-gradient(to top, #84cc16 40%, #bef264 100%);
+.text-grad-primary {
+    background: linear-gradient(to right, #1C9DFF 0%, #78FECF 50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -45,6 +45,12 @@
 .shadow-side {
     box-shadow: 1px 0 35px rgba(0, 0, 0, 0.07), -1px 0 35px rgba(0, 0, 0, 0.07);
 }
+/* t-lg */
+/* .shadow-t {
+    box-shadow: 1px -5px 25px rgba(0, 0, 0, 0.07);
+}
+
+*/
 ::-webkit-scrollbar {
     width: 12px;
 }
