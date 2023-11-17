@@ -3,6 +3,8 @@ import * as React from "react";
 import { QuranTopics } from "@/components/quran-topics";
 import { H1 } from "@/components/headers";
 import type { Metadata } from "next";
+import { ScrollTo } from "@/components/scroll-to";
+
 const content = {
   h1: "مواضيع سور القرآن الكريم",
   description: "شرح مختصر لمواضيع السور التي تساعد على الفهم والتدبر",
@@ -30,6 +32,7 @@ const QuranTopicsPage = async () => {
           <QuranTopics list={res} />
         </React.Suspense>
       </div>
+      <ScrollTo />
     </div>
   );
 };

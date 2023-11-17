@@ -1,5 +1,6 @@
 import { AllahNamesTabs } from "@/components/God-Names/Allah-names-tabs";
 import { H1 } from "@/components/headers";
+import { ScrollTo } from "@/components/scroll-to";
 
 const content = {
   h1: "أسماء الله الحسنى",
@@ -7,7 +8,7 @@ const content = {
 };
 export const metadata = {
   title: content.h1,
-  description: "أسمى الله الحسنى مع شرح لكل اسم",
+  description: content.p,
   category: "أسماء الله الحسنى",
 };
 
@@ -19,6 +20,7 @@ const NamesOfAllah = () => {
         <p className="text-center text-lg text-zinc-600">{content.p}</p>
       </div>
       <AllahNamesTabs />
+      <ScrollTo />
     </div>
   );
 };
