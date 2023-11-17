@@ -8,6 +8,6 @@
 
 .group:hover .shape-octagon,
 .shape-octagon {
-    background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, hsl(159, 99%, 73%, 0.7) 170%);
-        color: #78FECF;
+    background: radial-gradient(ellipse farthest-corner at center center, #FFFFFF 0%, hsl(159, 99%, 29%, .5) 170%);
+        color: #019561;
 }
