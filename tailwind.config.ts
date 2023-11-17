@@ -27,18 +27,18 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: '#09FDA7',
-          50: '#FFFFFF',
-          100: '#FFFFFF',
-          200: '#F2FFFA',
-          300: '#C9FFEC',
-          400: '#A1FEDD',
-          500: '#78FECF',
-          600: '#40FEBB',
-          700: '#09FDA7',
-          800: '#02CC85',
-          900: '#019561',
-          950: '#01794F'
+          DEFAULT: '#40FEBB',
+          50: '#F7FFFC',
+          100: '#E2FFF5',
+          200: '#BAFFE6',
+          300: '#91FED8',
+          400: '#69FEC9',
+          500: '#40FEBB',
+          600: '#08FEA7',
+          700: '#01CD85',
+          800: '#019561',
+          900: '#005D3C',
+          950: '#00412A',
         },
       }
     },
@@ -46,6 +46,6 @@ export default {
   plugins: [
     require("tailwind-custom-utilities"),
     require("@tailwindcss/typography"),
-    require("tailwindcss-animate")
+    require("tailwindcss-animate"),
   ],
 } satisfies Config;
