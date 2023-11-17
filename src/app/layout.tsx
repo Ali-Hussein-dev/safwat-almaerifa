@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl" className={fontFamily.className}>
-      <body className="scroll-smooth antialiased">
+      <body className="relative scroll-smooth antialiased">
         <NextTopLoader color="#84cc16" showSpinner={false} speed={300} />
         <main className="mx-auto flex min-h-screen flex-col justify-between gap-4 bg-zinc-50/30 shadow-lg">
           <header className="h-12 w-full bg-zinc-100 shadow-lg ">
