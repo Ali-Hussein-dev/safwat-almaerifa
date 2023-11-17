@@ -24,13 +24,17 @@ export function NameCard({
     <div className="break-inside flex flex-col justify-between rounded-lg border-zinc-100 bg-gradient-to-t from-zinc-100 to-transparent text-zinc-700 shadow-lg duration-300">
       <div className="grow p-4 pt-8">
         <div className="flex-row-between">
-          <div className="mb-1 w-full gap-1 font-bold text-lime-600 flex-row-start">
+          <div className="text-primary-600 mb-1 w-full gap-1 font-bold flex-row-start">
             {title}{" "}
-            <span className="mt-1 text-4xl font-extralight text-lime-600/50">
+            <span className="text-primary-600/50 mt-1 text-2xl font-extralight md:text-4xl">
               {content.nameSuffix}
             </span>
           </div>
-          <button type="button" onClick={onClick} className="p-1 text-lime-600">
+          <button
+            type="button"
+            onClick={onClick}
+            className="text-primary-600 p-1"
+          >
             {marked ? (
               <BsFillBookmarkCheckFill size="20" />
             ) : (
