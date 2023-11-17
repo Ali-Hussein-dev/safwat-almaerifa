@@ -25,11 +25,27 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      colors: {
+        primary: {
+          DEFAULT: '#40FEBB',
+          50: '#CEFFEE',
+          100: '#BAFFE6',
+          200: '#91FED8',
+          300: '#69FEC9',
+          400: '#40FEBB',
+          500: '#08FEA7',
+          600: '#01CD85',
+          700: '#019561',
+          800: '#005D3C',
+          900: '#002518',
+          950: '#000906',
+        },
+      },
     },
   },
   plugins: [
     require("tailwind-custom-utilities"),
     require("@tailwindcss/typography"),
-    require("tailwindcss-animate")
+    require("tailwindcss-animate"),
   ],
 } satisfies Config;

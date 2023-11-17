@@ -2,7 +2,6 @@ import clsx from "clsx";
 import Link from "next/link";
 import * as React from "react";
 import { GoLinkExternal } from "react-icons/go";
-
 const list = [
   {
     name: "أسماء الله الحسنى",
@@ -60,10 +59,12 @@ const content = {
 export const Hero = () => {
   return (
     <section className="mx-auto max-w-3xl pb-10 pt-4 text-zinc-700 md:pt-28">
-      <h1 className="text-grad-lime mb-1 text-center text-3xl font-black lg:text-4xl">
+      <h1 className="text-grad-primary mb-1 text-center text-3xl font-black lg:text-4xl">
         {content.h1}
       </h1>
-      <p className="px-3 text-center text-lg font-medium">{content.p}</p>
+      <p className="mb-4 px-3 text-center text-lg font-semibold text-zinc-500">
+        {content.p}
+      </p>
       <div className="grid gap-4 md:grid-cols-2 md:gap-7">
         {list.map((item, i) => (
           <Link
@@ -72,6 +73,7 @@ export const Hero = () => {
               `group relative rounded bg-gradient-to-t from-zinc-100 to-transparent shadow-lg duration-300 hover:shadow-xl`,
               i == 0 && "md:col-span-2",
               i == 5 && "md:col-span-2",
+              // css["card-bg"],
             )}
             href={item.href}
           >
@@ -82,9 +84,9 @@ export const Hero = () => {
             >
               <GoLinkExternal size="13" />
             </div>
-            <div className="px-2 pb-4 pt-7 md:px-4">
+            <div className="px-2 pb-9 pt-5 md:px-4">
               <div className="space-y-1 text-center">
-                <h2 className="text-grad-zinc text-2xl font-bold">
+                <h2 className="text-grad-zinc mb-2 text-xl font-extrabold">
                   {item.name}
                 </h2>
                 <p>{item.description}</p>

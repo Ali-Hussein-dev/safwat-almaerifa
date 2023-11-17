@@ -15,8 +15,8 @@ export const TabContentSimilarNames = async () => {
             key={i}
           >
             <div className="relative mb-4 gap-1 flex-row-center">
-              <div className="absolute h-[1.5px] w-full bg-gradient-to-r from-transparent via-lime-300 to-transparent" />
-              <h2 className="center z-[2] max-w-fit grow bg-zinc-50 px-4 font-bold text-lime-500">
+              <div className="absolute h-[1.5px] w-full bg-gradient-to-r from-transparent via-primary-300 to-transparent" />
+              <h2 className="center z-[2] max-w-fit grow bg-zinc-50 px-4 font-bold text-primary-500">
                 {o.title}
               </h2>
             </div>
