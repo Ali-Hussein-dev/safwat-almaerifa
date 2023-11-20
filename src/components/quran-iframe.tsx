@@ -14,7 +14,7 @@ export const QuranIframe = ({
   return (
     <div className="flex h-full w-full grow flex-col items-center justify-start space-y-4 pt-4">
       <button
-        className="rounded-lg border border-inherit bg-transparent px-8 py-2 text-lg font-normal text-inherit duration-500 hover:font-semibold"
+        className="rounded-lg border border-inherit bg-transparent px-8 py-2 text-lg font-normal text-inherit duration-300 hover:font-semibold"
         onClick={() => setOpen(!open)}
       >
         {open ? content.open : content.close}
