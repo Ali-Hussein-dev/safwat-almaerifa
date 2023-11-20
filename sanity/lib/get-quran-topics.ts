@@ -6,6 +6,7 @@ export type QuranTopic = {
     content: TypedObject;
     order: number;
     description: string;
+    _updatedAt: Date;
 }
 export const getQuranTopicsTitles = async (): Promise<Pick<QuranTopic, "title" | "order" | "description">[]> => await client.fetch(`*[_type == "quranTopics"] | order(order) {
     title, 
@@ -13,8 +14,9 @@ export const getQuranTopicsTitles = async (): Promise<Pick<QuranTopic, "title" |
     description
 }`)
 
-export const getQuranTopicContent = async (order: number): Promise<QuranTopic[]> => await client.fetch(`*[_type=="quranTopics" && order == $order] {
+export const getQuranTopicContent = async (order: number): Promise<QuranTopic> => await client.fetch(`*[_type=="quranTopics" && order == $order][0] {
     title,
     content,
-    order
+    order,
+    _updatedAt
 }`, { order })
