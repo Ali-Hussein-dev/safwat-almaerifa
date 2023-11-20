@@ -6,6 +6,7 @@ type Ruiner = {
     description: string
     slug: string
     content: TypedObject[]
+    _updatedAt: Date
 }
 
 export const getRuiners = async (): Promise<Omit<Ruiner, "content">[]> => {
@@ -17,7 +18,8 @@ export const getRuiners = async (): Promise<Omit<Ruiner, "content">[]> => {
 }
 
 
-export const getRuinerPage = async (slug: string): Promise<Pick<Ruiner, "content" | "title">> => client.fetch(`*[_type == "ruiners" && slug.current == $slug][0] {
+export const getRuinerPage = async (slug: string): Promise<Pick<Ruiner, "content" | "title" | "_updatedAt">> => client.fetch(`*[_type == "ruiners" && slug.current == $slug][0] {
     title,
-    content
+    content,
+    _updatedAt
 }`, { slug })

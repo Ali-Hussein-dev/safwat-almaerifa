@@ -15,7 +15,7 @@ export const metadata = {
 };
 const ReferencesPage = () => {
   return (
-    <div className="prose prose-zinc mx-auto w-full max-w-3xl grow bg-zinc-100 px-3 pt-4 md:px-8 md:pt-20">
+    <div className="prose prose-zinc mx-auto w-full max-w-3xl grow px-3 pt-4 md:px-8 md:pt-20">
       <h2>{content.h2}</h2>
       <ul>
         {content.list.map((item, i) => (
