@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 export default function RootPage() {
   return (
-    <div className="relative h-full w-full grow px-2 sm:px-4">
+    <div className="center relative h-full w-full grow px-2 sm:px-4">
       <Hero />
     </div>
   );
