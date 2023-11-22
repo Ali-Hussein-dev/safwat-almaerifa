@@ -17,6 +17,12 @@ const list = [
     status: "done",
   },
   {
+    name: "أسماء الله الحسنى",
+    description: "الإحسان أن تعبد الله كأنك تراه، فإن لم تكن تراه فإنه يراك",
+    href: "/names-of-Allah",
+    status: "done",
+  },
+  {
     name: "المهلكات",
     description: "أَعْدَى عَدُوِّكَ نفسُكَ التى بين جَنْبَيْكَ",
     href: "/ruiners",
@@ -65,14 +71,19 @@ export const Hero = () => {
       <p className="mb-4 px-3 text-center text-lg font-semibold text-zinc-500">
         {content.p}
       </p>
-      <div className="grid gap-4 md:grid-cols-2 md:gap-7">
+      <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-12">
         {list.map((item, i) => (
           <Link
             key={i}
             className={clsx(
               `group relative rounded bg-gradient-to-t from-zinc-100 to-transparent shadow-lg duration-300 hover:shadow-xl`,
-              i == 0 && "md:col-span-2",
-              i == 5 && "md:col-span-2",
+              i == 0 && "md:col-span-3 md:hidden",
+              i == 1 && "md:col-span-3",
+              i == 2 && "hidden md:col-start-4 md:col-end-10 md:block",
+              i == 3 && "md:col-start-10 md:col-end-13",
+              i == 4 && "md:col-span-4",
+              i == 5 && "md:col-start-5 md:col-end-9",
+              i == 6 && "md:col-start-9 md:col-end-13",
               // css["card-bg"],
             )}
             href={item.href}
