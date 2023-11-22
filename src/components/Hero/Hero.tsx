@@ -89,11 +89,17 @@ export const Hero = () => {
             href={item.href}
           >
             <div
-              className={`center h-7 w-7 -translate-y-3 translate-x-3 rounded-full bg-zinc-900 text-zinc-200 opacity-0 duration-500 ${
-                item.status == "done" && "shadow group-hover:opacity-100"
-              }`}
+              className={clsx(
+                "center h-7 w-7 scale-0 rounded-bl-3xl rounded-tr-sm text-zinc-200 opacity-0 duration-700",
+                item.status == "done" &&
+                  "group-hover:scale-100 group-hover:opacity-100",
+                "bg-gradient-to-bl from-zinc-900/90 to-zinc-700",
+              )}
             >
-              <GoLinkExternal size="13" />
+              <GoLinkExternal
+                size="13"
+                className="-translate-y-[2px] translate-x-[2px]"
+              />
             </div>
             <div className="px-2 pb-9 pt-5 md:px-4">
               <div className="space-y-1 text-center">
