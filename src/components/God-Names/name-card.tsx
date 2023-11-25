@@ -24,9 +24,9 @@ export function NameCard({
     <div className="break-inside flex flex-col justify-between rounded-lg border-zinc-100 bg-gradient-to-t from-zinc-100 to-transparent text-zinc-700 shadow-lg duration-300">
       <div className="grow p-4 pt-8">
         <div className="flex-row-between">
-          <div className="mb-1 w-full gap-1 font-bold text-primary-600 flex-row-start">
+          <div className="font-tajawal mb-1 w-full gap-1 font-bold text-primary-600 flex-row-start">
             {title}{" "}
-            <span className="mt-1 text-2xl font-extralight text-primary-600/50 md:text-4xl">
+            <span className="mr-1 mt-1 text-2xl font-extralight text-primary-600/40 md:text-4xl">
               {content.nameSuffix}
             </span>
           </div>
@@ -46,7 +46,7 @@ export function NameCard({
       </div>
       <Link href={`/${slug}`}>
         <button
-          className="w-full rounded-b-lg border-t py-2 duration-500 flex-row-center hover:bg-zinc-700 hover:text-zinc-100 active:scale-95"
+          className="font-tajawal w-full rounded-b-lg border-t py-2 duration-500 flex-row-center hover:bg-zinc-700 hover:text-zinc-100 active:scale-95"
           type="button"
         >
           {content.read}

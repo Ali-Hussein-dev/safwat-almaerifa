@@ -21,8 +21,10 @@ export const TopicCard: React.FC<TopicProps> = ({
     <div className="flex h-full flex-col justify-between overflow-hidden rounded-lg border bg-gradient-to-t from-stone-100 to-transparent pt-6 shadow-lg">
       <div className="flex grow justify-between px-3 pb-1">
         <div className="grow pb-2 pt-1">
-          <span className="text-xl font-bold text-primary-600">{title}</span>
-          <div className="pr-2 pt-1 font-medium text-zinc-400">
+          <span className="font-tajawal text-xl font-bold text-primary-600">
+            {title}
+          </span>
+          <div className="pr-2 pt-1 text-zinc-400">
             <TrancatedText text={description} />
           </div>
         </div>
@@ -38,7 +40,7 @@ export const TopicCard: React.FC<TopicProps> = ({
 
       <Link href={`/quran-topics/${order}`}>
         <button
-          className="w-full rounded-b-lg border-t py-2 duration-500 flex-row-center hover:bg-zinc-700 hover:text-zinc-100 active:scale-95"
+          className="font-tajawal w-full rounded-b-lg border-t py-2 duration-500 flex-row-center hover:bg-zinc-700 hover:text-zinc-100 active:scale-95"
           type="button"
         >
           <span className="mx-2">{content.read}</span>
