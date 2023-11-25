@@ -27,7 +27,14 @@
         break-inside: avoid;
     }
 }
+/* FONTS */
+.font-elMessiri {
+    font-family: var(--font-elMessiri)
+}
 
+.font-tajawal {
+    font-family: var(--font-tajawal)
+}
 .text-grad-zinc {
     background: linear-gradient(to top, #27272a 10%, #a1a1aa 90%);
     -webkit-background-clip: text;
@@ -69,4 +76,10 @@
 ol,
 ul {
     padding-right: 1.4rem;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-tajawal);
 }

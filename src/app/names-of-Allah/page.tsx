@@ -17,7 +17,7 @@ const NamesOfAllah = () => {
     <div className="mx-auto w-full max-w-3xl grow space-y-6 px-2 pt-4 md:pt-20">
       <div>
         <H1 value={content.h1} />
-        <p className="text-center text-lg text-zinc-600">{content.p}</p>
+        <h3 className="text-center">{content.p}</h3>
       </div>
       <AllahNamesTabs />
       <ScrollTo />

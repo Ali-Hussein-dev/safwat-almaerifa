@@ -22,9 +22,9 @@ const QuranTopicsPage = async () => {
   return (
     <div className="grow">
       <div className="mx-auto max-w-3xl pb-8 pt-4 text-zinc-700 md:pt-20">
-        <div className="mb-8 ">
+        <div className="mb-8">
           <H1 value={content.h1} />
-          <p className="text-center">{content.description}</p>
+          <h3 className="mt-2 text-center">{content.description}</h3>
         </div>
         <React.Suspense
           fallback={<p className="text-center text-xl">{content.loading}</p>}

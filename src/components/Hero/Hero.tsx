@@ -59,16 +59,17 @@ const Overlay = () => (
 );
 
 const content = {
-  h1: "صفوة المعرفة",
+  title: "صفوة المعرفة",
+  h1: "علم عمل تغيير",
   p: "مواضيع تستهدف النفس والقلب والعقل التي يحتاجها كل مسلم",
 };
 export const Hero = () => {
   return (
-    <section className="mx-auto max-w-3xl pb-10 pt-4 text-zinc-700 md:pt-28">
-      <h1 className="text-grad-primary mb-1 text-center text-3xl font-black lg:text-4xl">
+    <section className="mx-auto max-w-3xl pb-12 pt-5 text-zinc-700 md:pt-8">
+      <h1 className="text-grad-primary font-tajawal mb-2 pb-2 text-center text-3xl font-extrabold lg:text-6xl">
         {content.h1}
       </h1>
-      <p className="mb-4 px-3 text-center text-lg font-semibold text-zinc-500">
+      <p className="font-tajawal mb-4 px-3 text-center text-lg font-medium text-zinc-500">
         {content.p}
       </p>
       <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-12">
@@ -103,10 +104,10 @@ export const Hero = () => {
             </div>
             <div className="px-2 pb-9 pt-5 md:px-4">
               <div className="space-y-1 text-center">
-                <h2 className="text-grad-zinc mb-2 text-xl font-extrabold">
+                <h2 className="font-elMessiri mb-2 text-xl font-medium">
                   {item.name}
                 </h2>
-                <p>{item.description}</p>
+                <p className="text-zinc-500">{item.description}</p>
               </div>
               {item.status === "soon" && <Overlay />}
             </div>
