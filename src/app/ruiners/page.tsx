@@ -17,7 +17,7 @@ export default async function RuinersPage() {
     <div className="grow bg-gray-50 px-2 pb-6 pt-8 md:pt-20">
       <div className="mx-auto ">
         <H1 value={content.title} />
-        <p className="text-center">{content.description}</p>
+        <h3 className="text-center">{content.description}</h3>
       </div>
       <div className="mx-auto max-w-3xl">
         <div className="grid grid-cols-1 gap-6 pt-8 text-zinc-500 md:grid-cols-2">
@@ -27,18 +27,18 @@ export default async function RuinersPage() {
               <Link
                 href={`/ruiners/${o.slug}`}
                 key={i}
-                className="hover:border-primary-400 group rounded border-b-2 border-zinc-100 bg-gradient-to-t from-zinc-100 to-transparent px-3 py-4  shadow-lg duration-300"
+                className="group rounded border-b-2 border-zinc-100 bg-gradient-to-t from-zinc-100 to-transparent px-3 py-4 shadow-lg  duration-300 hover:border-primary-400"
               >
                 <div className="mb-3 gap-2 flex-row-start ">
                   <span
                     className={clsx(
-                      "center border-primary-400 text-primary-500 h-7 w-7 rounded-full border font-semibold duration-300",
+                      "center h-7 w-7 rounded-full border border-primary-400 font-semibold text-primary-500 duration-300",
                       "group-hover:bg-primary-500 group-hover:text-white",
                     )}
                   >
                     {o.slug}
                   </span>
-                  <span className="font-semibold">{o.title}</span>
+                  <span className="font-tajawal font-semibold">{o.title}</span>
                 </div>
                 <p className="font-light ">{o.description}</p>
               </Link>

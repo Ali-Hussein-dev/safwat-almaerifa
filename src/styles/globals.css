@@ -77,3 +77,9 @@ ol,
 ul {
     padding-right: 1.4rem;
 }
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-tajawal);
+}
