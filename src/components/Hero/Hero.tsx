@@ -77,7 +77,7 @@ export const Hero = () => {
           <Link
             key={i}
             className={clsx(
-              `group relative rounded bg-gradient-to-t from-zinc-100 to-transparent shadow-lg duration-300 hover:shadow-xl`,
+              `group relative overflow-hidden rounded bg-gradient-to-t from-zinc-100 to-transparent shadow-lg duration-300 hover:shadow-xl`,
               i == 0 && "md:col-span-3 md:hidden",
               i == 1 && "md:col-span-3",
               i == 2 && "hidden md:col-start-4 md:col-end-10 md:block",
@@ -91,9 +91,9 @@ export const Hero = () => {
           >
             <div
               className={clsx(
-                "center h-7 w-7 scale-0 rounded-bl-3xl rounded-tr-sm text-zinc-200 opacity-0 duration-700",
+                "center h-7 w-7 -translate-y-7 translate-x-7 rounded-bl-3xl rounded-tr-sm text-zinc-200 duration-700",
                 item.status == "done" &&
-                  "group-hover:scale-100 group-hover:opacity-100",
+                  "group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100",
                 "bg-gradient-to-bl from-zinc-900/90 to-zinc-700",
               )}
             >
