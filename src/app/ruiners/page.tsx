@@ -12,7 +12,7 @@ export const metadata = {
   title: "المهلكات",
 };
 
-export const revalidate = 60 * 60 * 5; // 5 hour
+export const revalidate = 18000; // 5 hour
 export const runtime = "edge";
 
 export default async function RuinersPage() {
