@@ -11,6 +11,10 @@ const content = {
 export const metadata = {
   title: "المهلكات",
 };
+
+export const revalidate = 18000; // 5 hour
+export const runtime = "edge";
+
 export default async function RuinersPage() {
   const list = await getRuiners();
   return (
