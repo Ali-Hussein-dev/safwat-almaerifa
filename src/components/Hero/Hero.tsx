@@ -26,7 +26,7 @@ const list = [
     name: "المهلكات",
     description: "أَعْدَى عَدُوِّكَ نفسُكَ التى بين جَنْبَيْكَ",
     href: "/ruiners",
-    status: "soon",
+    status: "done",
   },
   {
     name: "الدعاء والاستعانة",
