@@ -17,7 +17,6 @@ export const runtime = "edge";
 
 export default async function RuinersPage() {
   const list = await getRuiners();
-  console.log("🚀 ~ file: page.tsx:20 ~ RuinersPage ~ list:", list);
   return (
     <div className="grow bg-gray-50 px-2 pb-6 pt-8 md:pt-20">
       <div className="mx-auto ">
