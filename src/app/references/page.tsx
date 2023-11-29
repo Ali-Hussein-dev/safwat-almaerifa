@@ -5,6 +5,14 @@ const content = {
       label: "كتاب المسند الأسنى للأمام أبو حامد الغزالي",
       href: "https://app.turath.io/book/6465",
     },
+    {
+      label: "كتاب إحياء علوم الدين للأمام أبو حامد الغزالي",
+      href: "https://app.turath.io/book/9472",
+    },
+    {
+      label: "موعظة المؤمنين من إحياء علوم الدين",
+      href: "https://app.turath.io/book/22842",
+    },
     { label: "موقع القرآن الكريم", href: "https://quran.com/" },
     { label: "موقع الدرر السنية", href: "https://dorar.net/tafseer" },
     { label: "موقع موضوعات", href: "https://almalomat.com/" },
