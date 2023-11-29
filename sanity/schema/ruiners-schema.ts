@@ -19,6 +19,11 @@ const ruinersSchema = {
             type: "slug",
         },
         {
+            name: "order",
+            title: "Order",
+            type: "number",
+        },
+        {
             name: "content",
             title: "Content",
             type: "array",
