@@ -42,9 +42,7 @@ export default async function RuinersPage() {
                   >
                     {i + 1}
                   </span>
-                  <span className="font-tajawal font-semibold">
-                    {o.title} {o.order}
-                  </span>
+                  <span className="font-tajawal font-semibold">{o.title}</span>
                 </div>
                 <p className="font-light ">{o.description}</p>
               </Link>
