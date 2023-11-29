@@ -11,12 +11,12 @@ export const TabContentSimilarNames = async () => {
       <div className="w-full gap-8 flex-col-center">
         {list.map((o, i) => (
           <div
-            className="rounded-xl border-[0.5px] border-b-2 border-zinc-300 bg-zinc-50 px-4 py-8 shadow-lg"
+            className="rounded-xl border-[0.5px] border-b-2 border-zinc-300 bg-gradient-to-t from-zinc-50 to-transparent px-4 py-8 shadow-lg"
             key={i}
           >
             <div className="relative mb-4 gap-1 flex-row-center">
               <div className="absolute h-[1.5px] w-full bg-gradient-to-r from-transparent via-primary-300 to-transparent" />
-              <h2 className="center z-[2] max-w-fit grow bg-zinc-50 px-4 font-bold text-primary-500">
+              <h2 className="center z-[2] max-w-fit grow bg-white px-2 font-bold text-primary-500">
                 {o.title}
               </h2>
             </div>
