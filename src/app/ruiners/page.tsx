@@ -12,7 +12,7 @@ export const metadata = {
   title: "المهلكات",
 };
 
-export const revalidate = 18000; // 5 hour
+export const revalidate = 1800; // 5 hour
 export const runtime = "edge";
 
 export default async function RuinersPage() {
@@ -26,7 +26,7 @@ export default async function RuinersPage() {
       <div className="mx-auto max-w-3xl">
         <div className="grid grid-cols-1 gap-6 pt-8 text-zinc-500 md:grid-cols-2">
           {list
-            .sort((a, b) => +a.slug - +b.slug)
+            .sort((a, b) => a.order - b.order)
             .map((o, i) => (
               <Link
                 href={`/ruiners/${o.slug}`}
@@ -40,7 +40,7 @@ export default async function RuinersPage() {
                       "group-hover:bg-primary-500 group-hover:text-white",
                     )}
                   >
-                    {o.slug}
+                    {i + 1}
                   </span>
                   <span className="font-tajawal font-semibold">{o.title}</span>
                 </div>

@@ -7,12 +7,14 @@ type Ruiner = {
     slug: string
     content: TypedObject[]
     _updatedAt: Date
+    order: number
 }
 
 export const getRuiners = async (): Promise<Omit<Ruiner, "content">[]> => {
-    return client.fetch(`*[_type == "ruiners"]  | order(slug.current asc) {
+    return client.fetch(`*[_type == "ruiners"] {
         title,
         description,
+        order,
         "slug": slug.current
     }`)
 }
