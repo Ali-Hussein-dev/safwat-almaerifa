@@ -4,14 +4,8 @@ import { CardList } from "@/components/straight-path/card-list";
 
 const content = {
   h1: "الصراط المستقيم",
-  discrption: "خير الإمور أوساطها",
-  // headers: [
-  //   { label: "الإفراط" },
-  //   { label: "الوسطية والعدل " },
-  //   {
-  //     label: "التفريط",
-  //   },
-  // ],
+  discrption:
+    "وَإِنَّ ٱلَّذِينَ لَايُؤۡمِنُونَ بِٱلۡأٓخِرَةِعَنِ ٱلصِّرَٰطِ لَنَٰكِبُونَ",
 };
 
 export default async function StraightPathPage() {
