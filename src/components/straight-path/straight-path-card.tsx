@@ -14,10 +14,12 @@ export const StraightPathCard = ({
 }) => {
   return (
     <AccordionItem value={title} className="px-2 md:px-4">
-      <AccordionTrigger className="w-full px-0 text-sky-400 hover:text-sky-500">
+      <AccordionTrigger className="w-full px-0 py-2 font-semibold text-sky-400 hover:text-sky-500">
         {title}
       </AccordionTrigger>
-      <AccordionContent className="border-t">{children}</AccordionContent>
+      <AccordionContent className="space-y-3 border-t pt-2">
+        {children}
+      </AccordionContent>
     </AccordionItem>
   );
 };
