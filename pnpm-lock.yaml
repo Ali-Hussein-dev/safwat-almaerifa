@@ -24,6 +24,7 @@ specifiers:
   eslint-config-next: ^14.0.3
   next: ^14.0.3
   next-sanity: ^6.1.0
+  nextjs-google-analytics: ^2.3.3
   nextjs-toploader: ^1.5.3
   postcss: ^8.4.27
   prettier: ^3.0.0
@@ -55,6 +56,7 @@ dependencies:
   date-fns: 2.30.0
   next: 14.0.3_biqbaboplfbrettd7655fr4n2y
   next-sanity: 6.1.0_4tyiwfy3bolxg7mqvmptunwpqe
+  nextjs-google-analytics: 2.3.3_next@14.0.3+react@18.2.0
   nextjs-toploader: 1.5.3_pvgaconotzu4vdk37yty4okb7y
   re-resizable: 6.9.11_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -4991,6 +4993,18 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
+
+  /nextjs-google-analytics/2.3.3_next@14.0.3+react@18.2.0:
+    resolution: {integrity: sha512-Y6sI6A7wt5dji8hYBnVkOh9LTyImSLFZXx3FpyQgVW7W4b4qEFHjH2u3fhDJsrRZeLlUGM8/RuHD/mhHc2Axfg==}
+    peerDependencies:
+      next: '>=11.0.0'
+      react: '>=17.0.0'
+    dependencies:
+      next: 14.0.3_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+    optionalDependencies:
+      fsevents: 2.3.3
     dev: false
 
   /nextjs-toploader/1.5.3_pvgaconotzu4vdk37yty4okb7y:
