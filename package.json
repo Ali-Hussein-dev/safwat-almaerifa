@@ -22,6 +22,7 @@
     "date-fns": "^2.30.0",
     "next": "^14.0.3",
     "next-sanity": "^6.1.0",
+    "nextjs-google-analytics": "^2.3.3",
     "nextjs-toploader": "^1.5.3",
     "re-resizable": "^6.9.11",
     "react": "18.2.0",
