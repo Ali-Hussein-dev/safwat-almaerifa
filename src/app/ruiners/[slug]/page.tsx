@@ -22,6 +22,7 @@ export async function generateMetadata({
 const content = {
   loading: "جاري تحميل المحتوى...",
   lastUpdate: "آخر تعديل: ",
+  sources: "المصادر",
 };
 
 //======================================
@@ -43,11 +44,24 @@ const RuinerPage = async ({ params }: { params: { slug: string } }) => {
         </React.Suspense>
       }
       bottom={
-        <div className="border-t pt-1">
-          <span className="italic">
+        <div className="flex flex-col !items-start justify-between border-t pt-2 md:flex-row">
+          {page?.sources && (
+            <ul className="mb-2 pr-0 md:mb-0">
+              <span className="font-tajawal font-semibold">
+                {content.sources}
+              </span>
+              {page?.sources.map((source, i) => (
+                <li key={i} className="flex flex-col">
+                  <span className="">{source.title}</span>
+                  {/* <span className="">{source.url}</span> */}
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="italic">
             {content.lastUpdate}
             {format(new Date(page._updatedAt), "dd.MM.yyyy / hh:mm")}
-          </span>
+          </div>
         </div>
       }
     />

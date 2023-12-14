@@ -32,8 +32,23 @@ const ruinersSchema = {
                     type: "block",
                 },
             ],
-        }
-    ]
-}
+        },
+        {
+            name: "sources",
+            title: "Sources",
+            type: "array",
+            of: [
+                {
+                    type: "object",
+                    name: "soures",
+                    fields: [
+                        { name: "title", title: "Title", type: "string" },
+                        { name: "url", title: "URL", type: "url" },
+                    ],
+                },
+            ],
+        },
+    ],
+};
 
-export default ruinersSchema
+export default ruinersSchema;
