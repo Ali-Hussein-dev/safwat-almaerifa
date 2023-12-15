@@ -5,7 +5,8 @@ import clsx from "clsx";
 
 const content = {
   title: "المهلكات",
-  description: "أَعْدَى عَدُوِّكَ نفسُكَ التى بين جَنْبَيْكَ",
+  description:
+    "إِنَّ اللّهَ لاَ يُغَيِّرُ مَا بِقَوْمٍ حَتَّى يُغَيِّرُواْ مَا بِأَنْفُسِهِمْ",
 };
 
 export const metadata = {
