@@ -14,7 +14,7 @@ const content = {
 export const metadata: Metadata = {
   title: content.h1,
   description: content.description,
-  category: "قرآن",
+  category: "القرآن الكريم",
 };
 export const revalidate = 1000;
 const QuranTopicsPage = async () => {

@@ -10,10 +10,10 @@ const list = [
     status: "done",
   },
   {
-    name: "مواضيع سور القرآن الكريم",
+    name: "دستور المسلم القرآن الكريم",
     description:
       "يُؤْتِي الْحِكْمَةَ مَن يَشَاءُ ۚ وَمَن يُؤْتَ الْحِكْمَةَ فَقَدْ أُوتِيَ خَيْرًا كَثِيرًا",
-    href: "/quran-topics",
+    href: "/quran",
     status: "done",
   },
   {
@@ -92,7 +92,7 @@ export const Hero = () => {
           >
             <div
               className={clsx(
-                "center h-7 w-7 -translate-y-7 translate-x-7 rounded-bl-3xl rounded-tr-sm text-zinc-200 duration-700",
+                "center h-7 w-7 -translate-y-7 translate-x-7 rounded-bl-3xl rounded-tr-sm text-zinc-200 opacity-0 duration-500",
                 item.status == "done" &&
                   "group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100",
                 "bg-gradient-to-bl from-zinc-900/90 to-zinc-700",

@@ -36,7 +36,7 @@
     font-family: var(--font-tajawal)
 }
 .text-grad-zinc {
-    background: linear-gradient(to top, #27272a 10%, #a1a1aa 90%);
+    background: linear-gradient(to top, #27272a 5%, #a1a1aa 95%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
