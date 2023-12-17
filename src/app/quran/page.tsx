@@ -49,7 +49,7 @@ const Card = ({
 const QuranPage = () => {
   return (
     <div className="h-full flex-grow pt-10 md:pt-16">
-      <div className="mx-auto max-w-3xl text-zinc-700">
+      <div className="mx-auto max-w-3xl px-2 text-zinc-700 md:px-0">
         <div className="mb-6">
           <H1 value={content.title} />
           <p className="text-center text-lg">{content.description}</p>
