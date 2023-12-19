@@ -1,5 +1,5 @@
 import { PortableText } from "@portabletext/react";
-import { getQuranTopicContent } from "../../../../sanity/lib/get-quran-topics";
+import { getQuranTopicContent } from "@sanity/lib/get-quran-topics";
 import * as React from "react";
 import { QuranIframe } from "@/components/quran-iframe";
 import { ReadingPage } from "@/components/reading-container/reading-page";

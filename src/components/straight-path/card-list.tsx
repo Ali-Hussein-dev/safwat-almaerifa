@@ -1,6 +1,6 @@
 import { PortableText } from "@portabletext/react";
 import { StraightPathCard } from "./straight-path-card";
-import { type StraightPath } from "../../../sanity/lib/get-straight-path";
+import { type StraightPath } from "@sanity/lib/get-straight-path";
 import { Accordion } from "../ui/accordion";
 const content = {
   headers: [

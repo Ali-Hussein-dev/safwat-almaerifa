@@ -1,5 +1,5 @@
 import { PortableText } from "@portabletext/react";
-import { getSimilarNames } from "../../../sanity/lib/get-name-page";
+import { getSimilarNames } from "@sanity/lib/get-name-page";
 import * as React from "react";
 import { TabsContent } from "@/components/ui/tabs";
 

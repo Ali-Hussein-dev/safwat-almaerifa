@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabContentFullList } from "@/components/God-Names/tab-content-full-list";
-import { getAllPages } from "../../../sanity/lib/get-name-page";
+import { getAllPages } from "@sanity/lib/get-name-page";
 
 const content = {
   buttons: {

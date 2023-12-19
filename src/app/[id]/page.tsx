@@ -1,4 +1,4 @@
-import { getNamePage, getPageTitle } from "../../../sanity/lib/get-name-page";
+import { getNamePage, getPageTitle } from "@sanity/lib/get-name-page";
 import { PortableText } from "@portabletext/react";
 import { type NamePage } from "@/types/name-project";
 import type { Metadata } from "next";

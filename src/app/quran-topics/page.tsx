@@ -1,4 +1,4 @@
-import { getQuranTopicsTitles } from "../../../sanity/lib/get-quran-topics";
+import { getQuranTopicsTitles } from "@sanity/lib/get-quran-topics";
 import * as React from "react";
 import { QuranTopics } from "@/components/quran-topics";
 import { H1 } from "@/components/headers";
@@ -38,4 +38,3 @@ const QuranTopicsPage = async () => {
 };
 
 export default QuranTopicsPage;
-

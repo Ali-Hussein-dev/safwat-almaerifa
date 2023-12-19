@@ -1,9 +1,9 @@
 import { ReadingPage } from "@/components/reading-container/reading-page";
-import { getRuinerPage } from "../../../../sanity/lib/get-ruiners";
+import { getRuinerPage } from "@sanity/lib/get-ruiners";
 import * as React from "react";
 import { PortableText } from "@portabletext/react";
 import type { Metadata } from "next";
-import { getPageTitle } from "../../../../sanity/lib/seo";
+import { getPageTitle } from "@sanity/lib/seo";
 import { format } from "date-fns";
 export const revalidate = 30;
 

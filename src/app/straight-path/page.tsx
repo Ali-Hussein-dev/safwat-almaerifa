@@ -1,5 +1,5 @@
 import { H1 } from "@/components/headers";
-import { getStraightPathTitles } from "../../../sanity/lib/get-straight-path";
+import { getStraightPathTitles } from "@sanity/lib/get-straight-path";
 import { CardList } from "@/components/straight-path/card-list";
 
 const content = {

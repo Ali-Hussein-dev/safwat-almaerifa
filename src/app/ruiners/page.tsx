@@ -1,5 +1,5 @@
 import { H1 } from "@/components/headers";
-import { getRuiners } from "../../../sanity/lib/get-ruiners";
+import { getRuiners } from "@sanity/lib/get-ruiners";
 import Link from "next/link";
 import clsx from "clsx";
 
