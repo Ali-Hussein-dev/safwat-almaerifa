@@ -14,8 +14,8 @@ export const metadata = {
 
 const NamesOfAllah = () => {
   return (
-    <div className="mx-auto w-full max-w-3xl grow space-y-6 px-2 pt-4 md:pt-20">
-      <div>
+    <div className="page-container">
+      <div className="mb-5">
         <H1 value={content.h1} />
         <h3 className="text-center">{content.p}</h3>
       </div>

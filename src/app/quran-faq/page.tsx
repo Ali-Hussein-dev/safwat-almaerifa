@@ -6,7 +6,7 @@ const content = {
 //======================================
 const QuranFAQs = () => {
   return (
-    <div className="flex-grow pt-10 md:pt-16">
+    <div className="page-container">
       <div className="mx-auto max-w-3xl">
         <H1 value={content.title} />
         <p className="pt-2 text-center text-xl">{content.note}</p>

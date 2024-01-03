@@ -19,14 +19,14 @@ export const runtime = "edge";
 export default async function RuinersPage() {
   const list = await getRuiners();
   return (
-    <div className="grow bg-gray-50 px-2 pb-6 pt-8 md:pt-20">
-      <div className="mx-auto ">
+    <div className="page-container">
+      <div className="mx-auto">
         <H1 value={content.title} />
         <h3 className="mx-auto max-w-2xl text-center text-2xl">
           {content.description}
         </h3>
       </div>
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-4xl">
         <div className="grid grid-cols-1 gap-6 pt-8 text-zinc-500 md:grid-cols-2">
           {list
             .sort((a, b) => a.order - b.order)

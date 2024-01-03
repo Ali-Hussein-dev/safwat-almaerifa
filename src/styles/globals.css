@@ -52,6 +52,9 @@
 .shadow-side {
     box-shadow: 1px 0 35px rgba(0, 0, 0, 0.07), -1px 0 35px rgba(0, 0, 0, 0.07);
 }
+.page-container {
+    @apply max-w-4xl mx-auto grow px-2 pb-6 pt-8 md:pt-14 w-full;
+}
 /* t-lg */
 /* .shadow-t {
     box-shadow: 1px -5px 25px rgba(0, 0, 0, 0.07);
