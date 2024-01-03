@@ -22,7 +22,10 @@ const elMessiri = El_Messiri({
   weight: ["400", "500", "600", "700"],
   variable: "--font-elMessiri",
 });
-
+const content = {
+  about: "الغاية من المشروع",
+  label: "نسخة تجرييبة",
+};
 export default function RootLayout({
   children,
 }: {
@@ -39,9 +42,17 @@ export default function RootLayout({
           <NextTopLoader color="#84cc16" showSpinner={false} speed={300} />
           <main className="mx-auto flex min-h-screen flex-col justify-between gap-4 bg-zinc-50/30 shadow-lg">
             <header className="h-12 w-full bg-zinc-100 shadow-lg ">
-              <div className="mx-auto h-12 w-full max-w-3xl px-2 font-semibold text-zinc-700 flex-row-start">
-                <Link href="/">
-                  <Image src="/logo.svg" width="130" height="18" alt="logo" />
+              <div className="mx-auto h-12 w-full max-w-4xl px-2 font-semibold text-zinc-700 flex-row-between">
+                <div className="gap-2 flex-row-start">
+                  <Link href="/">
+                    <Image src="/logo.svg" width="130" height="16" alt="logo" />
+                  </Link>
+                  <span className="font-elMessiri rounded-sm bg-orange-800 px-1 text-sm text-white">
+                    {content.label}
+                  </span>
+                </div>
+                <Link href="/about" className="mb-1 ">
+                  {content.about}
                 </Link>
               </div>
             </header>
