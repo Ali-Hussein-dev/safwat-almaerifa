@@ -66,7 +66,7 @@ const content = {
 };
 export const Hero = () => {
   return (
-    <section className="mx-auto max-w-3xl pb-12 pt-5 text-zinc-700 md:pt-8">
+    <section className="mx-auto max-w-4xl pb-12 pt-5 text-zinc-700 md:pt-8">
       <h1 className="text-grad-primary font-tajawal mb-2 pb-2 text-center text-3xl font-extrabold lg:text-6xl">
         {content.h1}
       </h1>
@@ -78,7 +78,7 @@ export const Hero = () => {
           <Link
             key={i}
             className={clsx(
-              `group relative overflow-hidden rounded bg-gradient-to-t from-zinc-100 to-transparent shadow-lg duration-300 hover:shadow-xl`,
+              `group relative overflow-hidden bg-gradient-to-t from-zinc-100 to-transparent shadow-lg duration-300 hover:shadow-xl`,
               i == 0 && "md:col-span-3 md:hidden",
               i == 1 && "md:col-span-3",
               i == 2 && "hidden md:col-start-4 md:col-end-10 md:block",
