@@ -6,7 +6,7 @@ import clsx from "clsx";
 const content = {
   title: "المهلكات",
   description:
-    "إِنَّ اللّهَ لاَ يُغَيِّرُ مَا بِقَوْمٍ حَتَّى يُغَيِّرُواْ مَا بِأَنْفُسِهِمْ",
+    "إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ ۗ وَإِذَا أَرَادَ اللَّهُ بِقَوْمٍ سُوءًا فَلَا مَرَدَّ لَهُ ۚ وَمَا لَهُم مِّن دُونِهِ مِن وَالٍ ",
 };
 
 export const metadata = {
@@ -22,7 +22,9 @@ export default async function RuinersPage() {
     <div className="grow bg-gray-50 px-2 pb-6 pt-8 md:pt-20">
       <div className="mx-auto ">
         <H1 value={content.title} />
-        <h3 className="text-center">{content.description}</h3>
+        <h3 className="mx-auto max-w-2xl text-center text-2xl">
+          {content.description}
+        </h3>
       </div>
       <div className="mx-auto max-w-3xl">
         <div className="grid grid-cols-1 gap-6 pt-8 text-zinc-500 md:grid-cols-2">
