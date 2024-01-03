@@ -7,12 +7,15 @@ const content = {
   discrption:
     "صِرَاطِ اللَّهِ الَّذِي لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ أَلَا إِلَى اللَّهِ تَصِيرُ الْأُمُورُ",
 };
-
+export const metadata = {
+  title: content.h1,
+  description: content.discrption,
+};
 export default async function StraightPathPage() {
   const res = await getStraightPathTitles();
   return (
-    <div className="relative mx-auto w-full max-w-4xl grow space-y-5 px-2 pt-4 text-zinc-700 md:p-20">
-      <div className="mb-3">
+    <div className="page-container relative">
+      <div className="mb-5">
         <H1 value={content.h1} />
         <p className="text-center text-lg">{content.discrption}</p>
       </div>
