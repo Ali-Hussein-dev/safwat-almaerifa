@@ -5,7 +5,7 @@ import { CardList } from "@/components/straight-path/card-list";
 const content = {
   h1: "الصراط المستقيم",
   discrption:
-    "وَإِنَّ ٱلَّذِينَ لَايُؤۡمِنُونَ بِٱلۡأٓخِرَةِعَنِ ٱلصِّرَٰطِ لَنَٰكِبُونَ",
+    "صِرَاطِ اللَّهِ الَّذِي لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ أَلَا إِلَى اللَّهِ تَصِيرُ الْأُمُورُ",
 };
 
 export default async function StraightPathPage() {
