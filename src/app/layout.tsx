@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 export const viewport: Viewport = {
-  themeColor: "#f4f4f5",
+  themeColor: "#01CD85",
 };
 
 export default function RootLayout({
