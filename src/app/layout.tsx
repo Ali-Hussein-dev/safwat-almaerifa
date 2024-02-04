@@ -96,7 +96,7 @@ export default function RootLayout({
       className={`${tajawal.variable} ${elMessiri.variable}`}
     >
       <head>
-        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="theme-color" content="#fafafa" />
       </head>
       <body className="relative scroll-smooth antialiased">
         <React.Suspense fallback={<div>...</div>}>
