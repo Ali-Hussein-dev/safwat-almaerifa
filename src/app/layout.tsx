@@ -95,6 +95,9 @@ export default function RootLayout({
       dir="rtl"
       className={`${tajawal.variable} ${elMessiri.variable}`}
     >
+      <head>
+        <meta name="theme-color" content="#FFFFFF" />
+      </head>
       <body className="relative scroll-smooth antialiased">
         <React.Suspense fallback={<div>...</div>}>
           <NextTopLoader color="#84cc16" showSpinner={false} speed={300} />
