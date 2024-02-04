@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 export const viewport: Viewport = {
-  themeColor: "#01CD85",
+  themeColor: "#f4f4f5",
 };
 
 export default function RootLayout({
@@ -96,12 +96,12 @@ export default function RootLayout({
       className={`${tajawal.variable} ${elMessiri.variable}`}
     >
       <head>
-        <meta name="theme-color" content="#fafafa" />
+        <meta name="theme-color" content="#f4f4f5" />
       </head>
       <body className="relative scroll-smooth antialiased">
         <React.Suspense fallback={<div>...</div>}>
-          <NextTopLoader color="#84cc16" showSpinner={false} speed={300} />
-          <main className="mx-auto flex min-h-screen flex-col justify-between gap-4 bg-zinc-50/30 shadow-lg">
+          <NextTopLoader color="#01CD85" showSpinner={false} speed={300} />
+          <main className="mx-auto flex min-h-screen flex-col justify-between gap-4 bg-zinc-50 shadow-lg">
             <header className="h-12 w-full bg-zinc-100 shadow-lg ">
               <div className="mx-auto h-12 w-full max-w-4xl px-2 font-semibold text-zinc-700 flex-row-between">
                 <div className="gap-2 flex-row-start">
@@ -113,7 +113,7 @@ export default function RootLayout({
                       alt="logo"
                     />
                   </Link>
-                  <span className="font-elMessiri rounded-sm bg-orange-800 px-1 text-sm text-white">
+                  <span className="font-elMessiri rounded-sm bg-orange-700 px-1 text-sm text-white">
                     {content.label}
                   </span>
                 </div>
