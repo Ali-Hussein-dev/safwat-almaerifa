@@ -103,7 +103,12 @@ export default function RootLayout({
               <div className="mx-auto h-12 w-full max-w-4xl px-2 font-semibold text-zinc-700 flex-row-between">
                 <div className="gap-2 flex-row-start">
                   <Link href="/">
-                    <Image src="/logo.svg" width="130" height="16" alt="logo" />
+                    <Image
+                      src="/logo_drop.svg"
+                      width="140"
+                      height="18"
+                      alt="logo"
+                    />
                   </Link>
                   <span className="font-elMessiri rounded-sm bg-orange-800 px-1 text-sm text-white">
                     {content.label}
