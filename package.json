@@ -1,5 +1,5 @@
 {
-  "name": "names-of-god",
+  "name": "safwat-almaerifa",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,10 +17,13 @@
     "@radix-ui/react-tabs": "^1.0.4",
     "@sanity/image-url": "1",
     "@sanity/vision": "^3.20.1",
+    "@serwist/next": "^8.4.4",
+    "@serwist/precaching": "^8.4.4",
+    "@serwist/sw": "^8.4.4",
     "@t3-oss/env-nextjs": "^0.6.0",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
-    "next": "^14.0.3",
+    "next": "^14.1.0",
     "next-sanity": "^7.0.6",
     "nextjs-google-analytics": "^2.3.3",
     "nextjs-toploader": "^1.5.3",
@@ -45,14 +48,15 @@
     "autoprefixer": "^10.4.14",
     "class-variance-authority": "^0.7.0",
     "eslint": "^8.47.0",
-    "eslint-config-next": "^14.0.3",
+    "eslint-config-next": "^14.1.0",
     "postcss": "^8.4.27",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.1",
     "tailwind-custom-utilities": "^1.0.3",
     "tailwind-merge": "^2.0.0",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "webpack": "^5.90.1"
   },
   "ct3aMetadata": {
     "initVersion": "7.20.2"
