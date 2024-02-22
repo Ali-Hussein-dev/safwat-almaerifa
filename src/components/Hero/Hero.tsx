@@ -79,7 +79,7 @@ export const Hero = () => {
           <Link
             key={i}
             className={clsx(
-              `group relative overflow-hidden bg-gradient-to-t from-zinc-100 to-transparent shadow-lg duration-300 hover:shadow-xl`,
+              `group relative overflow-hidden bg-gradient-to-t from-zinc-100 to-zinc-50 shadow-lg duration-300 hover:shadow-xl`,
               i == 0 && "md:col-span-3 md:hidden",
               i == 1 && "md:col-span-3",
               i == 2 && "hidden md:col-start-4 md:col-end-10 md:block",

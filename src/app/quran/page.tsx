@@ -31,7 +31,7 @@ const Card = ({
 }: (typeof content.list)[0]) => (
   <Link
     href={href}
-    className="group flex flex-col justify-between rounded border-b-2 border-r-2 bg-gradient-to-t from-zinc-100/60 to-zinc-50/10 px-4 pb-3 pt-6 shadow duration-300 hover:shadow-lg"
+    className="group flex flex-col justify-between rounded border-b-2 border-r-2 bg-gradient-to-t from-zinc-100 to-zinc-50 px-4 pb-3 pt-6 shadow duration-300 hover:shadow-lg"
   >
     <h3 className="text-grad-zinc mb-1 text-xl font-semibold">{title}</h3>
     <p className="flex-grow border-b-[0.5px] border-zinc-300 pb-2">

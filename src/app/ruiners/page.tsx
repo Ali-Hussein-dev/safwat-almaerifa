@@ -34,7 +34,7 @@ export default async function RuinersPage() {
               <Link
                 href={`/ruiners/${o.slug}`}
                 key={i}
-                className="group rounded border-b-2 border-zinc-100 bg-gradient-to-t from-zinc-100 to-transparent px-3 py-4 shadow-lg  duration-300 hover:border-primary-400"
+                className="group rounded border-b-2 border-zinc-100 bg-gradient-to-t from-zinc-100 to-zinc-50 px-3 py-4 shadow-lg  duration-300 hover:border-primary-400"
               >
                 <div className="mb-3 gap-2 flex-row-start ">
                   <span

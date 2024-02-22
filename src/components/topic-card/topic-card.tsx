@@ -18,7 +18,7 @@ export const TopicCard: React.FC<TopicProps> = ({
   description,
 }) => {
   return (
-    <div className="flex h-full flex-col justify-between overflow-hidden rounded-lg border bg-gradient-to-t from-stone-100 to-transparent pt-6 shadow-lg">
+    <div className="flex h-full flex-col justify-between overflow-hidden rounded-lg border bg-gradient-to-t from-stone-100 to-zinc-50 pt-6 shadow-lg">
       <div className="flex grow justify-between px-3 pb-1">
         <div className="grow pb-2 pt-1">
           <span className="font-tajawal text-xl font-bold text-primary-600">

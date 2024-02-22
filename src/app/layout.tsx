@@ -98,10 +98,10 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#f4f4f5" />
       </head>
-      <body className="relative scroll-smooth antialiased">
+      <body className="relative scroll-smooth bg-zinc-50 antialiased">
         <React.Suspense fallback={<div>...</div>}>
           <NextTopLoader color="#01CD85" showSpinner={false} speed={300} />
-          <main className="mx-auto flex min-h-screen flex-col justify-between gap-4 bg-zinc-50 shadow-lg">
+          <main className="noise mx-auto flex min-h-screen flex-col justify-between gap-4 shadow-lg">
             <header className="h-12 w-full bg-zinc-100 shadow-lg ">
               <div className="mx-auto h-12 w-full max-w-4xl px-2 font-semibold text-zinc-700 flex-row-between">
                 <div className="gap-2 flex-row-start">

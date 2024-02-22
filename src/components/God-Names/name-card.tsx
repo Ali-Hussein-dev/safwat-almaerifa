@@ -21,7 +21,7 @@ export function NameCard({
     setMarked(_id, !marked);
   };
   return (
-    <div className="break-inside flex flex-col justify-between rounded-lg border-zinc-100 bg-gradient-to-t from-zinc-100 to-transparent text-zinc-700 shadow-lg duration-300">
+    <div className="break-inside flex flex-col justify-between rounded-lg border-zinc-100 bg-gradient-to-t from-zinc-100 to-zinc-50 text-zinc-700 shadow-lg duration-300">
       <div className="grow p-4 pt-8">
         <div className="flex-row-between">
           <div className="font-tajawal mb-1 w-full gap-1 font-bold text-primary-600 flex-row-start">
